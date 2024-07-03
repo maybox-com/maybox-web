@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Maybox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ Welcome to **Maybox** – your personalized beauty, wellness, and self-care subscription box service! We curate high-quality products tailored to your unique preferences, delivered right to your doorstep.
+ 
+ 
+  ## About Us 
+  
+  At Maybox, we believe in the power of self-care and the importance of wellness. Our mission is to provide you with a personalized selection of beauty, wellness, and self-care products that enhance your everyday life. Whether you're looking to pamper yourself, explore new products, or maintain a wellness routine, Maybox has got you covered.
+  
+## What We Offer 
+   
+### Personalized Beauty Boxes
+   
+Discover new beauty products tailored to your skin type, preferences, and style. Each box includes a mix of skincare, makeup, and beauty tools from top brands.
 
-## Available Scripts
+ ### Wellness Boxes 
+ 
+ Prioritize your well-being with our wellness boxes, featuring products such as supplements, fitness accessories, and wellness gadgets designed to keep you healthy and happy. 
+ 
+ ### Self-Care Boxes
 
-In the project directory, you can run:
+Unwind and relax with our self-care boxes, filled with items like bath bombs, candles, and soothing teas to help you create the perfect self-care routine. 
 
-### `npm start`
+## Why Choose Maybox? 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Personalization**: We curate each box based on your preferences and needs. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Quality Products**: We partner with trusted brands to bring you the best in beauty, wellness, and self-care. 
 
-### `npm test`
+- **Convenience**: Enjoy the convenience of having high-quality products delivered to your door. 
+- **Affordable**: Get premium products at an affordable subscription price.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How It Works 
 
-### `npm run build`
+1. **Sign Up**: Create an account and fill out a quick survey to tell us about your preferences. 
+2. **Subscribe**: Choose a subscription plan that suits you (monthly, quarterly, or annually). 
+3. **Receive**: Sit back and relax while we curate and deliver your personalized box. 
+4. **Enjoy**: Explore new products and enjoy your personalized selection. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Subscription Plans 
+- **Monthly**: $30/month [protoype]
+- **Quarterly**: $85/quarter [protoype]
+- **Annually**: $320/year [protoype]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing We welcome contributions to improve Maybox! Please feel free to submit issues, fork the repository, and open pull requests. ## License This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details. --- Thank you for choosing Maybox! We are excited to be a part of your self-care journey.
