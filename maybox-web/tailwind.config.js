@@ -3,6 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      colors: {
+        customWhite: '#FFFFFF',
+        customPink: '#F85C70',
+        customOrangeDark: '#A03302',
+        customRed: '#E43D40',
+        customOrangeLight: '#ED6C30',
+      },
       fontFamily: {
         ordinary: ['Ordinary', 'sans-serif'],
         neueEinstellung: ['Neue Einstellung', 'sans-serif'],
