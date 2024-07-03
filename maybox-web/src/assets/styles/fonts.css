@@ -1,0 +1,80 @@
+/* src/fonts.css */
+
+/* Ordinary Fonts */
+@font-face {
+    font-family: 'Ordinary';
+    src: url('/src/assets/fonts/ordinary/Ordinary-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ordinary';
+    src: url('/src/assets/fonts/ordinary/Ordinary-Ultra.ttf') format(' ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ordinary';
+    src: url('/src/assets/fonts/ordinary/Ordinary-Regular.ttf') format(' ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ordinary';
+    src: url('/src/assets/fonts/ordinary/Ordinary-Black.ttf') format(' ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ordinary';
+    src: url('/src/assets/fonts/ordinary/Ordinary-Medium.ttf') format(' ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Neue Einstellung Fonts */
+@font-face {
+    font-family: 'Neue Einstellung';
+    src: url('/src/assets/fonts/neue-einstellung/NeueEinstellung-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Einstellung';
+    src: url('/src/assets/fonts/neue-einstellung/NeueEinstellung-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Einstellung';
+    src: url('/src/assets/fonts/neue-einstellung/NeueEinstellung-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Einstellung';
+    src: url('/src/assets/fonts/neue-einstellung/NeueEinstellung-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Einstellung';
+    src: url('/src/assets/fonts/neue-einstellung/NeueEinstellung-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Einstellung';
+    src: url('/src/assets/fonts/neue-einstellung/NeueEinstellung-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
