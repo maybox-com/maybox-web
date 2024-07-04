@@ -10,24 +10,24 @@ import { faArrowPointer } from "@fortawesome/free-solid-svg-icons"; // Import th
 function Contactus() {
   return (
     <>
-      <div className="overflow-hidden">
-        <h1 className="text-customRed mt-40 pl-20 text-4xl font-bold font-ordinary">Get in touch with Us</h1>
-        <h2 className="font-light pl-20 pt-5">Online 24hr</h2>
-        <div className="active pl-20 pt-5 mb-20 relative">
+      <div className="overflow-hidden px-4 sm:px-6 lg:px-8">
+        <h1 className="text-customRed mt-20 sm:mt-40 text-2xl sm:text-4xl font-bold font-ordinary">Get in touch with Us</h1>
+        <h2 className="font-light pt-2 sm:pt-5">Online 24hr</h2>
+        <div className="active pt-2 sm:pt-5 mb-10 sm:mb-20 relative">
           <img src={online} alt="active icon" className="w-3 h-3" />
         </div>
 
-        <div className="pl-20 flex items-start mt-40">
+        <div className="flex flex-col lg:flex-row lg:items-start mt-20 sm:mt-40 space-y-10 lg:space-y-0 lg:space-x-10">
           <div className="flex-1">
-            <h1 className="text-customRed text-4xl font-bold">Do you want to learn more</h1>
-            <p className="pt-5">Reach out today and we’ll get back to you <br /> as soon as possible.</p>
-            <div className="pt-5">
-              <img src={contactbg} alt="Description of the image" className="w-80 h-90 rounded-xl mb-20" />
+            <h1 className="text-customRed text-2xl sm:text-4xl font-bold">Do you want to learn more</h1>
+            <p className="pt-2 sm:pt-5">Reach out today and we’ll get back to you <br /> as soon as possible.</p>
+            <div className="pt-2 sm:pt-5">
+              <img src={contactbg} alt="Description of the image" className="w-full sm:w-80 h-auto rounded-xl mb-10 sm:mb-20" />
             </div>
           </div>
 
           {/* Contact form */}
-          <div className="pl-10 pt-5 flex-1 mr-40">
+          <div className="flex-1">
             <form className="space-y-4">
               <div>
                 <label htmlFor="fullname" className="block text-lg font-medium text-customRed">Full name*</label>
@@ -60,7 +60,7 @@ function Contactus() {
               </div>
               <button
                 type="submit"
-                className="inline-flex items-center px-8 py-2 border border-transparent text-sm font-medium rounded-xl shadow-sm text-white bg-customRed"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-xl shadow-sm text-white bg-customRed"
               >
                 Send Message
                 <FontAwesomeIcon icon={faArrowPointer} className="ml-2" />

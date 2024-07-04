@@ -6,14 +6,11 @@ import './index.css';
 function App() {
   return (
     <div className="App">
-    
+     {/*
      <Navbar />
       <Body />
-  
-   {/*
+  */}
      <Contact/> 
-    
-    */}
     </div>
   );
 }
