@@ -1,0 +1,54 @@
+
+
+.main-container{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6em;
+        width: 50%;
+        margin: 0 auto
+}
+
+.pricing-txt{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        align-self: flex-start;
+}
+
+.price-container{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+
+@media (max-width: 480px) {
+    .main-container {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .pricing-txt {
+        text-align: center;
+        align-self: center;
+    }
+
+    .price-container {
+        gap: 1.5em;
+    }
+
+    .price-plans {
+        max-width: 100%;
+    }
+}
+
+.price-plans{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: first baseline;
+
+}
