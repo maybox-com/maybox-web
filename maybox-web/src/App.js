@@ -1,22 +1,21 @@
-import Body from './components/Body';
-import Navbar from './components/Navbar';
-
-import Home from './pages/Home'
-import About from './pages/About';
-
-import Home from './pages/Home';
-
+import React from 'react';
 import './index.css';
-import { Route, Routes } from 'react-router-dom';
-
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/ContactUs';
 
 function App() {
   return (
     <div className='bg-img'>
-    <div className="container mx-auto scroll-behavior: smooth; ">
-     <Home />
+      <div className="container mx-auto scroll-behavior: smooth;">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </div>
-     </div>
   );
 }
 

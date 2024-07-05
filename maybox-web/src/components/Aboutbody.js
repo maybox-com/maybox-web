@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaStar, FaRegHeart } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './css/Aboutbody.css';
 
 const Aboutbody = () => {
@@ -93,13 +93,13 @@ const Aboutbody = () => {
             </p>
 
             <div className="mt-8 flex justify-center space-x-4">
-              <Link
+              {/* <Link
                 to="#"
                 className="flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-red-200 text-customRed rounded-full hover:bg-red-400 transition duration-300 text-lg sm:text-xl md:text-2xl"
               >
                 <FaRegHeart className="mr-2 sm:mr-4 heart text-2xl sm:text-3xl rounded-full" />
                 Start Free Trial
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

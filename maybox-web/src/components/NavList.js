@@ -1,13 +1,14 @@
+// src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const navItems = [
-    { to: "/", label: "Home", ariaCurrent: "page" },
-    { to: "/about", label: "About" },
-    { to: "/shop", label: "Shop" },
-    { to: "/subscription-plans", label: "Subscription Plans" },
-    { to: "/contact-us", label: "Contact Us" },
+    { href: "/", label: "Home", ariaCurrent: "page" },
+    { href: "/about", label: "About" },
+    { href: "/shop", label: "Shop" },
+    { href: "/subscription-plans", label: "Subscription Plans" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
       {navItems.map((item, index) => (
         <li key={index}>
           <Link
-            to={item.to}
+            to={item.href}
             className="block py-2 px-3 text-customRed rounded md:bg-transparent"
             aria-current={item.ariaCurrent || undefined}
           >
