@@ -6,7 +6,7 @@ import './index.css';
 function App() {
   return (
     <div className='bg-img'>
-    <div className="container mx-auto ">
+    <div className="container mx-auto scroll-behavior: smooth; ">
      <Home />
     </div>
      </div>

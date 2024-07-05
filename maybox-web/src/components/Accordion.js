@@ -8,7 +8,7 @@ const Accordion = ({ title, content, isOpen, onClick }) => {
         aria-controls="basic-collapse-one"
         onClick={onClick}
       >
-        <h5>{title}</h5>
+        <h5 className=''>{title}</h5>
         <svg
           className={`text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 ${isOpen ? 'rotate-180' : ''}`}
           width="22"

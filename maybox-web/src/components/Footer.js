@@ -1,18 +1,19 @@
 import React from "react";
+import '../assets/styles/footer.css'
 
 function Footer() {
   return (
     <>
-      <footer class="w-full py-14 bg-customRed mb-10 ">
-        <div className="footer-sections flex gap-10 px-[9em] justify-center">
-          <div className="footer-sec-1 flex flex-col gap-[6em] items-start mr-auto ">
+      <footer class="w-full py-14 bg-customRed  ">
+        <div class="footer-sections flex gap-10 px-[24em] justify-center md:px-[10em]flex-col md:flex-row">
+          <div className="footer-sec-1 flex flex-col gap-[4em] items-start mr-auto ">
             <div className="logo-txt">
               <span className="font-ordinary text-8xl text-customWhite">
                 Maybox™
               </span>
             </div>
             <div className="social-logos">
-              <div class="flex space-x-10 justify-center items-center mb-14">
+              <div class="flex space-x-6 justify-center items-center mb-14">
                 <a
                   href="#"
                   class="block  text-customWhite transition-all duration-500 hover:text-customPink  "
@@ -82,7 +83,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="footer-sec-2 mt-6 items-start font-neueEinstellung">
+          <div className="footer-sec-2 text-[18px] mt-6 items-start font-neueEinstellung">
             <nav class="flex flex-col gap-3  text-white">
               <a href="#" class="hover:text-customPink">
                 Home
@@ -108,3 +109,5 @@ function Footer() {
 }
 
 export default Footer;
+
+

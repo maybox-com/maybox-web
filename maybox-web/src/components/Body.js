@@ -8,8 +8,8 @@ function Body() {
       <main className="main-block-body">
         <div className="hero relative flex flex-col items-center justify-center h-screen  text-black">
           <div className="relative container mx-auto z-10 text-center px-4">
-            <h1 className="text-5xl  text-white md:text-6xl font-ordinary ">
-              Beauty,self-care and wellness that <br />
+            <h1 className="text-5xl font-ordinary text-white md:text-6xl ">
+              Beauty, self-care and wellness that <br />
               <span className="relative inline-block font-ordinary">
                 delivers!
               </span>

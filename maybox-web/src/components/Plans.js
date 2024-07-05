@@ -12,20 +12,20 @@ function Plans() {
                 <div className='price-plans font-neueEinstellung'>
                     <h1 className='font-semibold text-2xl text-customRed'>Standard</h1>
                     <span className='font-bold'>$30/m USD</span>
-                    <span className='font-thin'>Pause and cancel anytime</span>
-                    <button className='font-thin'>Subscribe</button>
+                    <span className=''>Pause and cancel anytime</span>
+                    <button className='plans-btn'>Subscribe</button>
                 </div>
                 <div className='price-plans font-neueEinstellung'>
                     <h1 className='font-semibold text-2xl text-customRed'>Standard</h1>
                     <span className='font-bold'>$30/m USD</span>
-                    <span className='font-thin'>Pause and cancel anytime</span>
-                    <button className='font-thin'>Subscribe</button>
+                    <span className=''>Pause and cancel anytime</span>
+                    <button className='plans-btn'>Subscribe</button>
                 </div>
                 <div className='price-plans font-neueEinstellung'>
                     <h1 className='font-semibold text-2xl text-customRed'>Standard</h1>
                     <span className='font-bold'>$30/m USD</span>
-                    <span className='font-thin'>Pause and cancel anytime</span>
-                    <button className='font-thin'>Subscribe</button>
+                    <span className=''>Pause and cancel anytime</span>
+                    <button className='plans-btn'>Subscribe</button>
                 </div>
             </div>
         </div>
