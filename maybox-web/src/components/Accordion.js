@@ -4,7 +4,7 @@ const Accordion = ({ title, content, isOpen, onClick }) => {
   return (
     <div className={`accordion py-8 border-b border-solid border-gray-200 ${isOpen ? 'active' : ''}`}>
       <button
-        className="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium"
+        className="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-customPink accordion-active:text-indigo-600 accordion-active:font-medium"
         aria-controls="basic-collapse-one"
         onClick={onClick}
       >

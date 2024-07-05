@@ -1,30 +1,51 @@
 
-
+/* 
 .main-container{
-    display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1.6em;
-        width: 50%;
+        width: 100%;
         margin: 0 auto
-}
+} */
 
-.pricing-txt{
-    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-        align-self: flex-start;
-}
 
+/* 
 .price-container{
     display: flex;
     gap: 2em;
     justify-content: center;
 }
+ */
 
+.image-container{
+    padding-right: 3em;
+ }
 
+ .custom-overlay {
+     position: relative;
+     display: inline-block;
+ }
+
+ .custom-overlay img {
+     position: relative;
+     z-index: 10;
+ }
+
+ .custom-overlay::before {
+     content: "";
+     position: absolute;
+     top: 20px;
+     /* adjust as needed */
+     left: 20px;
+     /* adjust as needed */
+     width: 100%;
+     height: 100%;
+     background-color: #A03302;
+     /* custom color */
+     z-index: 0;
+ }
 
 
 /* CSS */
