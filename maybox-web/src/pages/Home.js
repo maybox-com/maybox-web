@@ -7,6 +7,7 @@ import '../index.css'
 import '../assets/styles/home.css'
 import Footer from '../components/Footer';
 
+
 function Home() {
     return ( 
         <main className='main'>
