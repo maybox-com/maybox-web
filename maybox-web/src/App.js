@@ -1,6 +1,6 @@
 import Body from './components/Body';
 import Navbar from './components/Navbar';
-import Contact from './pages/Contact';
+import Contact from './pages/ContactUs';
 import './index.css';
 
 function App() {

@@ -4,18 +4,3 @@ main{
 }
 
 
-.active{
-    position: relative;
-    bottom: 37px;
-    left: 85px;
-}
-.email{
-    width: 400px;
-}
-.fullname{
-    width: 400px;
-}
-.comment{
-    width: 400px;
-    height: 200px;
-}

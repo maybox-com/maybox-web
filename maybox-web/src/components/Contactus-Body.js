@@ -1,7 +1,7 @@
 import React from "react";
-import "../assets/styles/body.css";
+import "../assets/styles/contact.css";
 import online from "../assets/images/round.png";
-import contactbg from "../assets/images/Rectangle 63.jpg";
+import contactbg from "../assets/images/3d-casual-life-woman-talking-with-chatbot.png";
 
 // Import FontAwesome components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,9 +20,10 @@ function Contactus() {
         <div className="flex flex-col lg:flex-row lg:items-start mt-20 sm:mt-40 space-y-10 lg:space-y-0 lg:space-x-10">
           <div className="flex-1">
             <h1 className="text-customRed text-2xl sm:text-4xl font-bold">Do you want to learn more</h1>
+
             <p className="pt-2 sm:pt-5">Reach out today and we’ll get back to you <br /> as soon as possible.</p>
             <div className="pt-2 sm:pt-5">
-              <img src={contactbg} alt="Description of the image" className="w-full sm:w-80 h-auto rounded-xl mb-10 sm:mb-20" />
+              <img src={contactbg} alt="Description of the image" className="w-full sm:w-80 h-auto rounded-xl mt-10 mb-20 sm:mb-20" />
             </div>
           </div>
 
