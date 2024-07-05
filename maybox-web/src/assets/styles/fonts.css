@@ -10,28 +10,28 @@
 
 @font-face {
     font-family: 'Ordinary';
-    src: url('/src/assets/fonts/ordinary/Ordinary-Ultra.ttf') format(' ttf');
+    src: url('/src/assets/fonts/ordinary/Ordinary-Ultra.ttf') format('ttf');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ordinary';
-    src: url('/src/assets/fonts/ordinary/Ordinary-Regular.ttf') format(' ttf');
+    src: url('/src/assets/fonts/ordinary/Ordinary-Regular.ttf') format('ttf');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ordinary';
-    src: url('/src/assets/fonts/ordinary/Ordinary-Black.ttf') format(' ttf');
+    src: url('/src/assets/fonts/ordinary/Ordinary-Black.ttf') format('ttf');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ordinary';
-    src: url('/src/assets/fonts/ordinary/Ordinary-Medium.ttf') format(' ttf');
+    src: url('/src/assets/fonts/ordinary/Ordinary-Medium.ttf') format('ttf');
     font-weight: 500;
     font-style: normal;
 }
@@ -41,6 +41,12 @@
     font-family: 'Neue Einstellung';
     src: url('/src/assets/fonts/neue-einstellung/NeueEinstellung-ExtraBold.woff') format('woff');
     font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Neue Einstellung';
+    src: url('/src/assets/fonts/neue-einstellung/NeueEinstellung-Thin.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
 }
 

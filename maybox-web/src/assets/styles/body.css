@@ -1,6 +1,18 @@
-main{
-    background-image: url('../images/maybox-bg.jpg');
-    background-repeat: no-repeat;
-}
 
+
+.hero{
+    background-image: url('../images/header-image.jpg');
+    background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw;
+        /* Full viewport width */
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        padding: 2rem 0;
+        /* Adjust padding as needed */
+}
 

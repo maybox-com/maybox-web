@@ -1,17 +1,15 @@
 import Body from './components/Body';
 import Navbar from './components/Navbar';
-import Contact from './pages/ContactUs';
+import Home from './pages/Home';
 import './index.css';
 
 function App() {
   return (
-    <div className="App">
-     {/*
-     <Navbar />
-      <Body />
-  */}
-     <Contact/> 
+    <div className='bg-img'>
+    <div className="container mx-auto scroll-behavior: smooth; ">
+     <Home />
     </div>
+     </div>
   );
 }
 
