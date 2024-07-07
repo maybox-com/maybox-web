@@ -5,13 +5,10 @@
     background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100vw;
-        /* Full viewport width */
-        position: relative;
+        width: 100%;
         left: 50%;
         right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
+        margin: 0 auto;
         padding: 2rem 0;
         /* Adjust padding as needed */
 }

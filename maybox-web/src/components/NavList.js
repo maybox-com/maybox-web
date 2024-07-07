@@ -17,7 +17,7 @@ const Navbar = () => {
         <li key={index}>
           <Link
             to={item.href}
-            className="block py-2 px-3 text-customRed rounded md:bg-transparent"
+            className="block py-2 px-3 text-customOrangeDark hover:text-customRed rounded md:bg-transparent"
             aria-current={item.ariaCurrent || undefined}
           >
             {item.label}

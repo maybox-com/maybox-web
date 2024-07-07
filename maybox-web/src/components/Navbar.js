@@ -4,20 +4,20 @@ import NavList from"./NavList"
 function Navbar() {
   return (
     <>
-      <nav class=" fixed w-full border border-white bg-white z-20 top-0 start-0 ">
+      <nav class=" fixed w-full border border-gray-300 bg-customWhite z-20 top-0 start-0 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <span class="font-ordinary self-center text-[18px] font-semibold whitespace-nowrap text-customRed">
+            <span class="font-playtip self-center text-[18px] font-semibold whitespace-nowrap text-customOrangeDark">
               MAYBOX™
             </span>
           </a>
           <div class="flex font-neueEinstellung font md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
               type="button"
-              class="text-white bg-customRed focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center hover:bg-customPink transition duration-300"
+              class="text-white bg-customOrangeDark focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center hover:bg-customRed transition duration-300"
             >
               Get started
             </button>
