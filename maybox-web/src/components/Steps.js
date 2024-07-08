@@ -27,7 +27,7 @@ function Steps() {
   return (
     <div className="flex flex-col gap-[7em] md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6 p-6">
       {steps.map((step, index) => (
-        <div key={index} className="flex flex-col items-center w-full md:max-w-[290px] bg-white  shadow-lg overflow-hidden">
+        <div key={index} className="flex flex-col items-center max-w-[299px] md:max-w-[290px] bg-white  shadow-lg overflow-hidden">
           <div className={`w-full p-6 ${step.bgColor} border-b-4`}>
             <h3 className={`text-lg justify-start ${step.textColor} font-neueEinstellung font-bold`}>{step.title}</h3>
           </div>

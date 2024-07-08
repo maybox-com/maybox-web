@@ -13,3 +13,19 @@
         /* Adjust padding as needed */
 }
 
+
+
+
+
+@media (max-width: 640px) {
+    .header-btn {
+        
+        gap: 1em;
+    }
+
+    .hero{
+        background-image: url('../images/maybox-mb-bg.jpg');
+        
+    }
+}
+

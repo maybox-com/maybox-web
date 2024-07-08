@@ -1,8 +1,8 @@
-// src/components/Navbar.js
+// src/components/NavList.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const NavList = () => {
   const navItems = [
     { href: "/", label: "Home", ariaCurrent: "page" },
     { href: "/about", label: "About" },
@@ -28,4 +28,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavList;
