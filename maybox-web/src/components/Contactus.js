@@ -1,10 +1,6 @@
 import React from "react";
 import "../assets/styles/contact.css";
-import ContactImage from "../assets/images/Contact.jpg"; // Import the image correctly
-
-// Import FontAwesome components
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowPointer } from "@fortawesome/free-solid-svg-icons"; // Import the specific icon
+import ContactImage from "../assets/images/Contact.jpg"; 
 
 function Contactus() {
   return (
@@ -18,8 +14,6 @@ function Contactus() {
             <p className="font-neueEinstellung pl-[4px] font-normal text-gray-600 mb-6 ">
               Reach out to us and tell us more about the package you want.
             </p>
-
-            {/* Form Section */}
             <form className="space-y-4 ">
               <div>
                 <label className="block text-sm font-neueEinstellung font-normal text-gray-600 mb-2" htmlFor="name">
