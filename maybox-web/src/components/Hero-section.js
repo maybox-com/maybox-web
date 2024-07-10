@@ -11,7 +11,7 @@ function HeroSection() {
             Products curated just for you. Choose your favorites or let us <br className="hidden sm:block" /> guide
             you through new finds tailored to your preferences.
           </div>
-          <div className="section-2 w-full md:w-1/2 p-4 mt-4 md:mt-12">
+          <div className="section-2 w-full md:w-1/2 p-4 mt-[-3em] md:mt-[12em]">
           <h1 className="font-meduim font-playtip text-customOrangeDark mb-8 text-2xl md: text-[48px] ">What you love.</h1>
             Try new brands. From cult favourites to popular <br className="block" /> brands.
           </div>

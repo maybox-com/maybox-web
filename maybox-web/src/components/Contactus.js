@@ -1,7 +1,6 @@
 import React from "react";
 import "../assets/styles/contact.css";
-import online from "../assets/images/round.png";
-import contactbg from "../assets/images/3d-casual-life-woman-talking-with-chatbot.png";
+import ContactImage from "../assets/images/Contact.jpg"; // Import the image correctly
 
 // Import FontAwesome components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,63 +9,91 @@ import { faArrowPointer } from "@fortawesome/free-solid-svg-icons"; // Import th
 function Contactus() {
   return (
     <>
-      <div className="overflow-hidden px-4 sm:px-6 lg:px-8">
-        <h1 className="text-customRed mt-20 sm:mt-40 text-2xl sm:text-4xl font-bold font-ordinary">Get in touch with Us</h1>
-        <h2 className="font-light pt-2 sm:pt-5">Online 24hr</h2>
-        <div className="active pt-2 sm:pt-5 mb-10 sm:mb-20 relative">
-          <img src={online} alt="active icon" className="w-3 h-3" />
-        </div>
+      <div className="container mx-auto mt-20 p-4">
+        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8">
+          <div className="w-full md:w-1/2 mb-8 md:mb-0">
+            <h2 className="font-playtip font-semibold text-4xl contactus mb-4">
+              Contact Us
+            </h2>
+            <p className="font-neueEinstellung pl-[4px] font-normal text-gray-600 mb-6 ">
+              Reach out to us and tell us more about the package you want.
+            </p>
 
-        <div className="flex flex-col lg:flex-row lg:items-start mt-20 sm:mt-40 space-y-10 lg:space-y-0 lg:space-x-10">
-          <div className="flex-1">
-            <h1 className="text-customRed text-2xl sm:text-4xl font-bold">Do you want to learn more</h1>
-
-            <p className="pt-2 sm:pt-5">Reach out today and we’ll get back to you <br /> as soon as possible.</p>
-            <div className="pt-2 sm:pt-5">
-              <img src={contactbg} alt="Description of the image" className="w-full sm:w-80 h-auto rounded-xl mt-10 mb-20 sm:mb-20" />
-            </div>
-          </div>
-
-          {/* Contact form */}
-          <div className="flex-1">
-            <form className="space-y-4">
+            {/* Form Section */}
+            <form className="space-y-4 ">
               <div>
-                <label htmlFor="fullname" className="block text-lg font-medium text-customRed">Full name*</label>
+                <label className="block text-sm font-neueEinstellung font-normal text-gray-600 mb-2" htmlFor="name">
+                  Full name
+                </label>
                 <input
+                  className="border rounded-lg font-neueEinstellung w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  id="name"
                   type="text"
-                  id="fullname"
-                  className="mt-1 block w-full p-2 border border-customRed rounded-2xl shadow-sm focus:border-customRed focus:ring focus:outline-none"
-                  required
-                  placeholder=" John Ortega"
+                  placeholder="John doe"
                 />
               </div>
+
               <div>
-                <label htmlFor="email" className="block text-lg font-medium text-customRed">Email*</label>
+                <label
+                  className="block font-neueEinstellung font-normal text-gray-600 text-sm mb-2"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
                 <input
-                  type="email"
+                  className="border font-neueEinstellung rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
-                  className="mt-1 block w-full p-2 border border-customRed rounded-2xl shadow-sm focus:border-customRed focus:ring focus:outline-none"
-                  required
-                  placeholder=" johnortega@gmail.com"
+                  type="email"
+                  placeholder="johndoe@gmail.com"
                 />
               </div>
+
               <div>
-                <label htmlFor="comment" className="block text-lg font-medium text-customRed">Comment*</label>
-                <textarea
-                  id="comment"
-                  className="mt-1 block w-full p-2 h-40 border border-customRed rounded-2xl shadow-sm focus:border-customRed focus:ring focus:outline-none"
-                  required
-                  placeholder=" Type your comment here..."
-                ></textarea>
+                <label
+                  className="block font-neueEinstellung font-normal text-gray-600 text-sm mb-2"
+                  htmlFor="phone"
+                >
+                  Phone Number
+                </label>
+                <input
+                  className="border font-neueEinstellung rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  id="phone"
+                  type="tel"
+                  placeholder="+23408045789512"
+                />
               </div>
-              <button
-                type="submit"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-xl shadow-sm text-white bg-customRed"
-              >
-                Send Message
-                <FontAwesomeIcon icon={faArrowPointer} className="ml-2" />
-              </button>
+
+              <div>
+                <label
+                  className="block font-neueEinstellung font-normal text-gray-600 text-sm mb-2"
+                  htmlFor="message"
+                >
+                  Message
+                </label>
+                <textarea
+                  className="border font-neueEinstellung rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="message"
+                  placeholder="your message..."
+                />
+              </div>
+
+              <div className="flex items-center justify-between">
+                <button
+                  className="bg-customOrangeDark text-white font-normal font-neueEinstellung py-2 px-4 rounded focus:outline-none focus:shadow-outline flex items-center"
+                  type="button"
+                >
+                  Send Message
+                </button>
+              </div>
             </form>
+            {/* End of Form Section */}
+          </div>
+          <div className="hidden md:flex w-full md:w-1/2 justify-center">
+            <img
+              src={ContactImage}
+              alt="Contact Us"
+              className="contact-image max-w-full h-auto rounded-lg"
+            />
           </div>
         </div>
       </div>
