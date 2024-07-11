@@ -13,7 +13,6 @@ import './index.css';
 function App() {
   return (
     <div className='bg-img'>
-
       <div className="container mx-auto scroll-behavior: smooth;">
         <Routes>
           <Route path="/" element={<Home />} />
