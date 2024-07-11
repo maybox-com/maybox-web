@@ -7,6 +7,8 @@ import Contact from './pages/ContactUs';
 import Lost from './pages/404';
 import Body from './components/Body';
 import Navbar from './components/Navbar';
+import './index.css';
+
 
 function App() {
   return (

@@ -1,7 +1,8 @@
-// src/components/NavList.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import React from 'react';
 const NavList = () => {
   const navItems = [
     { href: "/", label: "Home", ariaCurrent: "page" },
@@ -19,6 +20,10 @@ const NavList = () => {
             to={item.href}
             className="block py-2 px-3 text-customOrangeDark hover:text-customRed rounded md:bg-transparent"
             aria-current={item.ariaCurrent || undefined}
+          <a
+            href={item.href}
+            className="block py-2 px-3 text-customRed rounded md:bg-transparent"
+            aria-current={item.ariaCurrent || undefined }
           >
             {item.label}
           </Link>
