@@ -13,7 +13,6 @@ import './index.css';
 function App() {
   return (
     <div className='bg-img'>
-      <Navbar />
       <div className="container mx-auto scroll-behavior: smooth;">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,7 +21,6 @@ function App() {
           <Route path="*" element={<Lost />} />
         </Routes>
       </div>
-      <Body />
     </div>
   );
 }
