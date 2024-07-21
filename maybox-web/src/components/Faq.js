@@ -10,7 +10,7 @@ function Faq() {
   return (
     <>
       <div class="space-y-4 px-2 md:px-[10em]">
-        <div className="font-playtip text-center my-10 text-3xl mb: text-[54px]">
+        <div className="font-playtip leading-tight text-center my-10 text-3xl mb: text-[54px]">
           <h1>Questions?Answers.</h1>
         </div>
               <details

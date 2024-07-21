@@ -1,15 +1,58 @@
-.active{
+.footer {
+    margin-top: 20px;
+}
+
+.p {
     position: relative;
-    bottom: 37px;
-    left: 85px;
+    left: 59px;
+    bottom: 88px;
 }
-.email{
-    width: 400px;
+
+body {
+    overflow-x: hidden;
 }
-.fullname{
+
+.message {
     width: 400px;
+    height: 100px;
 }
-.comment{
+
+.form {
+    position: relative;
+    left: 55px;
+    bottom: 90px;
+}
+
+.contact-image {
     width: 400px;
-    height: 200px;
+    height: 300px;
+}
+
+
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-form-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    /* Centers the image within its container */
+}
+
+.contact-image {
+    max-width: 100%;
+    /* Ensures the image doesn't exceed the container's width */
+    height: auto;
+    /* Maintains the aspect ratio */
+    border-radius: 8px;
+    /* Adds rounded corners to the image */
 }
