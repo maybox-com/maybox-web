@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaStar, FaRegHeart } from "react-icons/fa";
 import "../assets/styles/Aboutbody.css";
-import Payment from "./Payment";
 
 const Aboutbody = () => {
   return (
@@ -125,7 +124,6 @@ const Aboutbody = () => {
             </p>
           </div>
         </div>
-        <Payment/>
       </section>
     </>
   );
