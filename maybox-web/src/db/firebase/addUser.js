@@ -1,6 +1,6 @@
 import {React,useState} from 'react';
 import { db } from './firebase'
-import {collection,addDoc,Timestamp, setDoc} from 'firebase/firestore'
+import {collection,addDoc,Timestamp, setDoc, doc} from 'firebase/firestore'
 
 
 
