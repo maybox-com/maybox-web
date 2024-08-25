@@ -5,8 +5,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/ContactUs';
 import Lost from './pages/404';
-import Body from './components/Body';
-import Navbar from './components/Navbar';
+import Body from './components/Sections/Body';
+import Navbar from './components/Layout/Navbar';
 import './index.css';
 
 

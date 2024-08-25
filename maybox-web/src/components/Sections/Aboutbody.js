@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaStar, FaRegHeart } from "react-icons/fa";
-import "../assets/styles/Aboutbody.css";
+import "../../assets/styles/Aboutbody.css";
 
 const Aboutbody = () => {
   return (

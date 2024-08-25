@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/body.css";
+import "../../assets/styles/body.css";
 import HeroSection from "./Hero-section";
 
 function Body() {

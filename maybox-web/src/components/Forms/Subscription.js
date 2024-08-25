@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PaystackButton } from 'react-paystack';
-import { db } from '../firebase/firebase'; // Import db from your firebase config file
+import { db } from '../../firebase/firebase'; // Import db from your firebase config file
 import { collection, addDoc } from 'firebase/firestore'; // Import Firestore functions
 
 const Subscription = () => {

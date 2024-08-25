@@ -1,7 +1,7 @@
 import React from 'react';
-import '../assets/styles/plan.css'
+import '../../assets/styles/plan.css'
 import Steps from './Steps';
-import wellnessImage from '../assets/images/wellness.jpg';
+import wellnessImage from '../../assets/images/wellness.jpg';
 function Plans() {
     return ( 
         <>
