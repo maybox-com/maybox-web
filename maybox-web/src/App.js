@@ -3,10 +3,9 @@ import './index.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Shop from './pages/Shop';
 import Contact from './pages/ContactUs';
 import Lost from './pages/404';
-import Body from './components/Sections/Body';
-import Navbar from './components/Layout/Navbar';
 import './index.css';
 
 
@@ -18,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="*" element={<Lost />} />
         </Routes>
       </div>
