@@ -44,4 +44,5 @@ Unwind and relax with our self-care boxes, filled with items like bath bombs, ca
 
  
 
-## Contributing We welcome contributions to improve Maybox! Please feel free to submit issues, fork the repository, and open pull requests. ## License This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details. --- Thank you for choosing Maybox! We are excited to be a part of your self-care journey.
+## Contributing We welcome contributions to improve Maybox! 
+Please feel free to submit issues, fork the repository, and open pull requests. ## License This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details. --- Thank you for choosing Maybox! We are excited to be a part of your self-care journey.

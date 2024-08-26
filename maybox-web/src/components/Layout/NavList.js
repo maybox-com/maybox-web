@@ -1,13 +1,11 @@
-// src/components/Navbar.js
-import React from 'react';
 
-const Navbar = () => {
+const NavList = () => {
   const navItems = [
-    { href: "#", label: "Home", ariaCurrent: "page" },
-    { href: "#", label: "About" },
-    { href: "#", label: "Shop" },
-    { href: "#", label: "Subscription Plans" },
-    { href: "#", label: "Contact Us" },
+    { href: "/", label: "Home", ariaCurrent: "page" },
+    { href: "/about", label: "About" },
+    { href: "/shop", label: "Shop" },
+    { href: "/subscription-plans", label: "Subscription Plans" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   return (
@@ -27,4 +25,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavList;

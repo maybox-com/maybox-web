@@ -11,6 +11,7 @@ module.exports = {
         customOrangeLight: '#ED6C30',
       },
       fontFamily: {
+        playtip: ['Platypi', 'san-serif'],
         ordinary: ['Ordinary', 'sans-serif'],
         neueEinstellung: ['Neue Einstellung', 'sans-serif'],
       },
@@ -27,6 +28,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+        require('@tailwindcss/forms'),
+  ],
 }
 
