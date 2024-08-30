@@ -1,31 +1,16 @@
-
-
-.hero{
-    background-image: url('../images/header-image.jpg');
-    background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        left: 50%;
-        right: 50%;
-        margin: 0 auto;
-        padding: 2rem 0;
-        /* Adjust padding as needed */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: auto; /* Allow scrolling on the page */
 }
-
-
-
 
 
 @media (max-width: 640px) {
-    .header-btn {
-        
-        gap: 1em;
-    }
+  .header-btn {
+      gap: 1em;
+  }
 
-    .hero{
-        background-image: url('../images/maybox-mb-bg.jpg');
-        
-    }
+  .hero {
+      background-image: url('../images/maybox-mb-bg.jpg');
+  }
 }
-

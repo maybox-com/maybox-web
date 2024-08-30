@@ -1,49 +1,30 @@
-<<<<<<< HEAD
 import React from 'react';
 import './index.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Shop from './pages/Shop';
 import Contact from './pages/ContactUs';
 import Lost from './pages/404';
-=======
-import Body from './components/Body';
-import Navbar from './components/Navbar';
-<<<<<<< Updated upstream
-
-import Home from './pages/Home'
-import About from './pages/About';
-
-import Home from './pages/Home';
-
-=======
->>>>>>> Stashed changes
 import './index.css';
+import SignIn from './components/Layout/Sign-In';
+import SignUp from './components/Layout/Sign-up';
 
->>>>>>> fork/update-James
 
 function App() {
   return (
-<<<<<<< Updated upstream
     <div className='bg-img'>
-<<<<<<< HEAD
       <div className="container mx-auto scroll-behavior: smooth;">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="*" element={<Lost />} />
         </Routes>
       </div>
-=======
-    <div className="container mx-auto scroll-behavior: smooth; ">
-     <Home />
-=======
-    <div className="App">
-      <Navbar />
-     <Body />
->>>>>>> Stashed changes
->>>>>>> fork/update-James
     </div>
   );
 }

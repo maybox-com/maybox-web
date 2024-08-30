@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: auto; /* Allow scrolling on the page */
+}
+
+.signup-edit2 {
+  color: #e43d40;
+}
+
+.signup-edit3 {
+  background-color: #e43d40;
+}
+
+.icon {
+  margin-left: 140px;
+  margin-top: 40px;
+  position: relative;
+  top: 25px;
+}
+
+.relative.w-1/2 {
+  height: 100vh; /* Set height to viewport height */
+}
+
+.w-full.max-w-xs {
+  height: auto; /* Allow the height to grow */
+  overflow: visible; /* Prevent vertical scrolling */
+}

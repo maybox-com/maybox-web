@@ -1,15 +1,17 @@
+
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Layout/Navbar';
 import Contactus from '../components/Contactus-Body';
-import Footer from '../components/Footer';
+import Footer from '../components/Layout/Footer';
 
 function Contact() {
-    return ( 
-        <>
-        <Navbar />
-        <Contactus/>
-        </>
-     );
+  return (
+    <>
+      <Navbar />
+      <Contactus />
+      <Footer />
+    </>
+  );
 }
 
 export default Contact;

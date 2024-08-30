@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/styles/contact.css";
 import ContactImage from "../assets/images/Contact.jpg"; // Import the image correctly
 
-// Import FontAwesome components
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowPointer } from "@fortawesome/free-solid-svg-icons"; // Import the specific icon
 
