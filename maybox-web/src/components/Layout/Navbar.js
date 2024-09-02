@@ -1,5 +1,6 @@
-import {useState, React} from "react";
-import NavList from"./NavList"
+import { useState } from "react";
+import NavList from "./NavList";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -21,12 +22,14 @@ function Navbar() {
             </span>
           </a>
           <div className="flex font-neueEinstellung font md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button
-              type="button"
-              className="text-white bg-customOrangeDark focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center hover:bg-customRed transition duration-300"
-            >
-              Get started
-            </button>
+            <Link to="/signin">
+              <button
+                type="button"
+                className="text-white bg-customOrangeDark focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center hover:bg-customRed transition duration-300"
+              >
+                Get started
+              </button>
+            </Link>
             <button
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-customRed focus:outline-none focus:ring-2 focus:ring-customOrangeLight dark:text-customOrangeDark dark:hover:bg-customRed dark:focus:ring-customOrangeLight"

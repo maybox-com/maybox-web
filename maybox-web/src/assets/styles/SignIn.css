@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Allow scrolling on the page */
+}
+
+.edit2 {
+  color: #e43d40;
+}
+
+.edit3 {
+  background-color: #e43d40;
+}
+
+.icon {
+  margin-left: 140px;
+  margin-top: 40px;
+  position: relative;
+  top: 25px;
+}
+
+/* Ensure the image on the left stays at a fixed height */
+.relative.w-1/2 {
+  height: 100vh; /* Set height to viewport height */
+}
+
+/* Adjust the form container to take available height without overflow */
+.w-full.max-w-xs {
+  height: auto; /* Allow the height to grow */
+  overflow: visible; /* Prevent vertical scrolling */
+}
+

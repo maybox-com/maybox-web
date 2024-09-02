@@ -7,6 +7,8 @@ import Shop from './pages/Shop';
 import Contact from './pages/ContactUs';
 import Lost from './pages/404';
 import './index.css';
+import SignIn from './components/Layout/Sign-In';
+import SignUp from './components/Layout/Sign-up';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="*" element={<Lost />} />
         </Routes>
       </div>
