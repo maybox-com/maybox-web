@@ -5,14 +5,15 @@ module.exports = {
     extend: {
       colors: {
         customWhite: '#FFFFFF',
-        customPink: '#F85C70',
-        customOrangeDark: '#A03302',
-        customRed: '#E43D40',
-        customOrangeLight: '#ED6C30',
+        customPink: '#6EACDA',
+        customOrangeDark: '#021526',
+        customRed: '#03346E',
+        customOrangeLight: '#FF9B50',
       },
       fontFamily: {
         playtip: ['Platypi', 'san-serif'],
         ordinary: ['Ordinary', 'sans-serif'],
+        clash: ['ClashDisplay', 'sans-serif'],
         neueEinstellung: ['Neue Einstellung', 'sans-serif'],
       },
       fontWeight: {

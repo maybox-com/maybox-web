@@ -16,8 +16,8 @@ function Navbar() {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <span className="font-playtip self-center text-[18px] font-semibold whitespace-nowrap text-customOrangeDark">
-              MAYBOX™
+            <span className="font-clash self-center text-[18px] font-semibold whitespace-nowrap text-customOrangeDark">
+              MayBox™
             </span>
           </a>
           <div className="flex font-neueEinstellung font md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">

@@ -8,9 +8,9 @@ function Body() {
       <main className="main-block-body">
         <div className="hero flex flex-col items-center justify-center h-screen text-black">
           <div className="relative container mx-auto z-10 text-center px-4">
-            <h1 className="text-4xl sm:text-5xl text-center md:text-6xl font-playtip text-customOrangeDark lg:text-start lg:pl-[4em]">
+            <h1 className="text-4xl sm:text-5xl text-center md:text-6xl font-playtip tracking-tight font-medium text-customOrangeDark lg:text-start lg:pl-[4em]">
               Beauty, self-care and wellness that <br />
-              <span className="relative inline-block font-playtip">
+                <span className="relative inline-block font-medium font-playtip">
                 delivers!
               </span>
             </h1>
