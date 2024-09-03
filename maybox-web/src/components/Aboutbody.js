@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaStar, FaRegHeart } from "react-icons/fa";
 import "../assets/styles/Aboutbody.css";
+import racially from "../assets/images/portrait-diverse-latin-people.jpg";
+import sustain from "../assets/images/top-view-smartphone-template-workspace.jpg";
+import empower from "../assets/images/togetherness-group-women-hugging.jpg";
 
 const Aboutbody = () => {
   return (
     <>
-      <section className="sect1">
+      <section className="sect1 mt-24">
         <div className="relative flex flex-col text-customOrangeDark items-center justify-center min-h-screen px-4">
           <div className="absolute bottom-10 left-4 md:bottom-28 md:left-8 z-10 bg-white p-4 md:p-16">
             <p className="font-semibold pl-[4px] tracking-tight text-[15px] font-neueEinstellung">Joy cannot be contained</p>
@@ -48,7 +50,7 @@ const Aboutbody = () => {
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
           <div className="flex justify-center">
             <img
-              src="https://www.birchbox.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fbirchbox%2F9483d55e-b56e-4532-bdb9-98b857cc2806_pexels-rodnae-productions-8760417%2B%25281%2529%2B1.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C640%2C400%26w%3D600%26h%3D375&w=640&q=75"
+            src={racially}
               alt=""
               className="w-64 md:w-96 mt-12"
             />
@@ -89,7 +91,7 @@ const Aboutbody = () => {
 
           <div className="flex justify-center">
             <img
-              src="https://www.birchbox.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fbirchbox%2Fda5c76ff-f56a-47ce-88c6-a2fa628b7043_pexels-vlada-karpovich-4668362%2B1.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C640%2C400%26w%3D600%26h%3D375&w=640&q=75"
+              src={sustain}
               alt=""
               className="w-64 md:w-96"
             />
@@ -101,7 +103,7 @@ const Aboutbody = () => {
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
           <div className="flex justify-center">
             <img
-              src="https://www.birchbox.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fbirchbox%2F2782482b-59b8-44af-97f6-b0c6083a5a94_katy-anne-nTP8aZjedqI-unsplash%2B%25281%2529%2B1.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C640%2C400%26w%3D600%26h%3D375&w=640&q=75"
+              src={empower}
               alt=""
               className="w-64 md:w-96 mt-12"
             />
