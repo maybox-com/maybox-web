@@ -7,8 +7,8 @@ import Shop from './pages/Shop';
 import Contact from './pages/ContactUs';
 import Lost from './pages/404';
 import './index.css';
-import SignIn from './components/Layout/Sign-In';
-import SignUp from './components/Layout/Sign-up';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
 
 function App() {

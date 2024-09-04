@@ -1,6 +1,6 @@
 import React from "react";
-import "../assets/styles/contact.css";
-import ContactImage from "../assets/images/Contact.jpg"; // Import the image correctly
+import "../../assets/styles/contact.css";
+import ContactImage from "../../assets/images/Contact.jpg"; // Import the image correctly
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

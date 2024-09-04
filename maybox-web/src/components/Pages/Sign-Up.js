@@ -1,8 +1,5 @@
-
 import React from 'react';
-import Navbar from './Navbar';
-import SignupBody from '../SignupBody';
-import Footer from './Footer';
+import SignupBody from '../UI/SignupBody';
 
 function SignUp() {
   return (

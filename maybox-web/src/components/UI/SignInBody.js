@@ -1,16 +1,26 @@
 import React, { useState } from 'react';
-import '../assets/styles/SignIn.css'; // Updated import
-import Image from '../assets/images/Login.png';
+import '../../assets/styles/SignIn.css'; 
+import Image from '../../assets/images/Login.png';
+import { auth } from '../../firebase/firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Link } from 'react-router-dom';
 
 export default function SignIn() {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); 
-    console.log('Email:', email);
-    console.log('Password:', password);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      console.log('Logged in as:', userCredential.user.email);
+    } catch (error) {
+      console.error('Login failed:', error.message);
+  
+    }
   };
 
   return (

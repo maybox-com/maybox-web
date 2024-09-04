@@ -17,7 +17,7 @@
     "axios": "^1.7.2",
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
-    "firebase": "^10.12.3",
+    "firebase": "^10.13.1",
     "firebase-admin": "^12.2.0",
     "isexe": "^3.1.1",
     "postcss": "^8.4.41",

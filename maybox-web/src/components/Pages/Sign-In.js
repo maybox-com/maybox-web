@@ -1,8 +1,6 @@
-
 import React from 'react';
-import Navbar from './Navbar';
-import SignInBody from '../SignInBody';
-import Footer from './Footer';
+import SignInBody from '../UI/SignInBody';
+
 
 function SignIn() {
   return (
