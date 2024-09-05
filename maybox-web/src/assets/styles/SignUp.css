@@ -6,14 +6,29 @@ html, body {
 
 .signup-edit2 {
   color: #e43d40;
+  text-align: center;
 }
 
 .signup-edit3 {
   background-color: #e43d40;
+  text-align: center;
+}
+.edit3{
+  text-align: center;
+  width: 80px;
+}
+.div1{
+  position: relative;
+  right: 60px;
+}
+.inputfield{
+  width: 400px;
 }
 
 .icon {
-  margin-left: 140px;
+  margin-left: 14px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   margin-top: 40px;
   position: relative;
   top: 25px;
@@ -26,4 +41,13 @@ html, body {
 .w-full.max-w-xs {
   height: auto; /* Allow the height to grow */
   overflow: visible; /* Prevent vertical scrolling */
+}
+
+@media (max-width: 768px) {
+  /* Image adjustments */
+  .div1{
+    position: relative;
+    left: 20px;
+    top: 30px;
+  }
 }

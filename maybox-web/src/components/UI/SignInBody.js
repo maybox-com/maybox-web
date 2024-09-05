@@ -39,12 +39,12 @@ export default function SignIn() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen overflow-hidden">
+    <div className="flex maindiv flex-col lg:flex-row min-h-screen overflow-hidden p-10 mt-2">
       <Toaster position="top-center" reverseOrder={false} />
 
       {/* Image section */}
-      <div className="relative w-full lg:w-1/2 order-1 lg:order-none">
-        <img src={Image} alt="Sign In" className="object-cover w-full h-auto" />
+      <div className="relative img w-full lg:w-1/2 order-1 lg:order-none">
+        <img src={Image} alt="Sign In" className="object-cover w-full h-auto p-10" />
       </div>
 
       {/* Form section */}
@@ -57,7 +57,7 @@ export default function SignIn() {
       >
         <div className="w-full max-w-xs">
           <div className="text-center">
-            <div className="icon">
+            <div className="icon1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -126,7 +126,7 @@ export default function SignIn() {
             <div>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-xl edit3 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex bg-customOrangeDark w-full justify-center rounded-xl edit3 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Sign in
               </button>
