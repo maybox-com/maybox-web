@@ -136,7 +136,7 @@ export default function SignIn() {
           </form>
           <button className="mt-10 text-center text-sm text-gray-500">
             Not a member?{" "}
-            <Link to="/signup" className="text-indigo-600">
+            <Link to="/signup" className="font-bold text-customOrangeDark">
               Sign Up here
             </Link>
             

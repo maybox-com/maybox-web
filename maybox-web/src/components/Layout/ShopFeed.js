@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from 'react'
+import Blur from "../UI/Blur";
 import {
   Dialog,
   DialogBackdrop,
@@ -77,6 +78,7 @@ function classNames(...classes) {
 function ShopFeed() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
     return ( <>
+    <Blur>
     <div class="container font-neueEinstellung mt-20  mx-auto p-4"> 
        <div>
         {/* Mobile filter dialog */}
@@ -273,6 +275,7 @@ function ShopFeed() {
         </main>
       </div>
   </div>
+   </Blur>
     </> );
 }
 
