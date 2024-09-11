@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  overflow: auto; /* Allow scrolling on the page */
+  overflow: auto; 
 }
 
 .signup-edit2 {
@@ -19,11 +19,11 @@ html, body {
   top: 25px;
 }
 
-.relative.w-1/2 {
-  height: 100vh; /* Set height to viewport height */
+.relative.w-1\/2 {
+  height: 100vh; 
 }
 
 .w-full.max-w-xs {
-  height: auto; /* Allow the height to grow */
-  overflow: visible; /* Prevent vertical scrolling */
+  height: auto;
+  overflow: visible; 
 }
