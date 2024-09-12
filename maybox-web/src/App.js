@@ -9,6 +9,7 @@ import Lost from './pages/404';
 import './index.css';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
+import ForgotPassword from './components/Pages/ForgottenPass';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/resetpassword" element={<ForgotPassword />} />
           <Route path="*" element={<Lost />} />
         </Routes>
       </div>

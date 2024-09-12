@@ -138,9 +138,11 @@ export default function SignIn() {
             Not a member?{" "}
             <Link to="/signup" className="font-bold text-customOrangeDark">
               Sign Up here
-            </Link>
-            
+            </Link> 
           </button>
+           <Link to="/resetpassword" className=" text-customOrangeDark">
+            Forgotten password ?
+            </Link>
         </div>
       </motion.div>
     </div>
