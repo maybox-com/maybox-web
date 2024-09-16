@@ -27,6 +27,12 @@ const Aboutbody = () => {
 
       <section className="flex justify-center mt-24  font-neueEinstellung px-6 md:px-12">
         <div className="">
+        <h2 className="font-medium text-customOrangeDark font-playtip text-xl md:text-3xl mb-6">
+              Our Mission
+            </h2>
+            <p className="mb-4 text-xl">
+              Making Beauty Personal
+          </p>
           <p className="mb-4">
             When we started maybox, we set out to make the world of beauty
             better.{" "}
@@ -123,6 +129,19 @@ const Aboutbody = () => {
               mentor women in all stages and types of careers. We partner with
               women-founded, owned, and run companies and non-profits with
               women-centered missions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-52 mb-32 px-4">
+        <div className="flex flex-col md:flex-row justify-center md:space-x-6">
+          <div className="w-full md:w-1/2 px-4">
+            <h2 className="font-medium text-customOrangeDark font-playtip text-xl md:text-3xl mb-6">
+            Why Maybox?
+            </h2>
+            <p className="text-[15px] font-neueEinstellung">
+            At Maybox, our focus is on you. We believe that beauty is a personal journey, and we’re here to help you discover products that work for you—no matter your skin type, beauty preferences, or routine. Whether you’re looking to explore new brands, simplify your routine, or just treat yourself to something special, Maybox is designed to bring joy, excitement, and quality products to your doorstep every month.
             </p>
           </div>
         </div>
