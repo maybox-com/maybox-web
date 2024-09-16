@@ -37,10 +37,10 @@ export default function Body() {
       {/* Image Grid Section with Icons */}
       <div className="w-full font-neueEinstellung mt-8 bg-[#FCF5EB] py-16">
         <div className="text-center mb-8">
-          <p className="text-[#FBA013] uppercase text-sm font-playtip tracking-widest font-semibold">
+          <p className="text-[#FBA013] uppercase text-sm tracking-widest font-semibold">
             The Benefits
           </p>
-          <h2 className="text-3xl font-bold text-gray-800">Feel balanced.</h2>
+          <h2 className="text-3xl font-meduim text-black">Feel balanced.</h2>
           <p className="text-gray-600 mt-4">
             Helping people feel, look, and do good.
           </p>
@@ -56,7 +56,7 @@ export default function Body() {
               className=" mb-4"
             />
             <LordIcon src="https://cdn.lordicon.com/jjoolpwc.json" />
-            <h3 className="text-xl font-bold mt-4">FEEL</h3>
+            <h3 className="text-xl font-bold mt-4 text-black">FEEL</h3>
             <p className="text-gray-600 mt-2 text-center">
               Let us help you <span className="font-bold">feel</span> glamorous
               and beautiful.
@@ -72,7 +72,7 @@ export default function Body() {
               className=" mb-4"
             />
             <LordIcon src="https://cdn.lordicon.com/zpwnkfbk.json" />
-            <h3 className="text-xl font-bold mt-4">LOOK</h3>
+            <h3 className="text-xl font-bold mt-4 text-black">LOOK</h3>
             <p className="text-gray-600 mt-2 text-center">
               Let us help you <span className="font-bold">look</span> bold with
               a natural glow.
@@ -88,7 +88,7 @@ export default function Body() {
               className=" mb-4"
             />
             <LordIcon src="https://cdn.lordicon.com/jyrzvbtn.json" />
-            <h3 className="text-xl font-bold mt-4">DO</h3>
+            <h3 className="text-xl font-bold mt-4 text-black">DO</h3>
             <p className="text-gray-600 mt-2 text-center">
               Let us help inspire you to <span className="font-bold">do</span>{" "}
               good work.
@@ -99,10 +99,10 @@ export default function Body() {
 
       <div className="w-full mt-[8em] font-neueEinstellung bg-[#FCF5EB] py-16">
         <div className="text-center mb-8">
-          <p className="text-[#FBA013] uppercase text-sm font-playtip tracking-widest font-semibold">
+          <p className="text-[#FBA013] uppercase text-sm  tracking-widest font-semibold">
             MEMBERSHIP PERKS
           </p>
-          <h2 className="text-3xl font-bold text-gray-800">
+          <h2 className="text-3xl font-medium text-black">
             Feeling better, made easier.
           </h2>
         </div>

@@ -17,13 +17,13 @@ export default function Guarantee() {
       </div>
 
       <div className="mt-2 lg:-mt-120 lg:ml-16 text-center lg:text-left">
-        <h3 className="text-[#FBA013] font-playtip font-normal text-3xl mb-2">
+        <h3 className="text-[#FBA013] font-playtip font-normal text-3xl mb-6">
           Happiness Guarantee
         </h3>
-        <h2 className="text-3xl font-normal text-gray-800 mb-4">
+        <h2 className="text-3xl font-normal text-gray-800 mb-6">
           Love it, or it’s on us.
         </h2>
-        <ul className="space-y-4 ">
+        <ul className="flex flex-col gap-6 space-y-4 ">
           <li className="flex items-center">
             <img
               src={Clapping}
