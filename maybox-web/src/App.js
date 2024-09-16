@@ -9,8 +9,8 @@ import Lost from './pages/404';
 import './index.css';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
-import ForgotPassword from './components/Pages/ForgottenPass';
-
+import ForgotPassword from './pages/ForgottenPassword';
+import LandingPage from './components/Landing/LandingPage';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/resetpassword" element={<ForgotPassword />} />
           <Route path="*" element={<Lost />} />
+          <Route path="/landing" element={<LandingPage />} />
         </Routes>
       </div>
     </div>
