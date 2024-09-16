@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc, query, where, getDocs } from "firebase/firestore"; 
 import { db } from "../../firebase/firebase";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function WaitlistForm() {
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,17 +15,32 @@ export default function WaitlistForm() {
       return;
     }
 
+    setLoading(true); 
+
     try {
+
+      const q = query(collection(db, "waitlist"), where("email", "==", email));
+      const querySnapshot = await getDocs(q);
+
+      if (!querySnapshot.empty) {
+        toast.error("This email is already on the waitlist!");
+        setLoading(false); // Stop loading
+        return;
+      }
+
+  
       await addDoc(collection(db, "waitlist"), {
         email,
         timestamp: new Date(),
       });
 
       toast.success("Locked in, stay tuned 🥳");
-      setEmail(""); // Clear the input field
+      setEmail(""); 
     } catch (error) {
       console.error("Error adding email: ", error);
       toast.error("Something went wrong. Please try again!");
+    } finally {
+      setLoading(false); 
     }
   };
 
@@ -38,7 +54,7 @@ export default function WaitlistForm() {
         offers right to your inbox
       </p>
 
-      <form onSubmit={handleSubmit} className="flex  items-center">
+      <form onSubmit={handleSubmit} className="flex items-center">
         <input
           type="email"
           className="border border-gray-300 py-2 px-4 rounded-l-lg w-64"
@@ -50,9 +66,10 @@ export default function WaitlistForm() {
         <button
           type="submit"
           data-ripple-light="true"
-          className="py-3 px-6  bg-[#FBA013] text-white text-xs font-neueEinstellung hover:opacity-90 transition-all"
+          className={`py-3 px-6 bg-[#FBA013] text-white text-xs font-neueEinstellung hover:opacity-90 transition-all ${loading ? "opacity-50 cursor-not-allowed" : ""}`} 
+          disabled={loading} 
         >
-          Join today
+          {loading ? "Processing" : "Join today"} 
         </button>
       </form>
     </div>

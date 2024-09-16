@@ -25,7 +25,7 @@ function Navbar() {
           <div className="flex font-neueEinstellung font md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-customRed focus:outline-none focus:ring-2 focus:ring-customOrangeLight"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-[#E68A00]  focus:outline-none focus:ring-2 focus:ring-customOrangeLight"
               aria-controls="navbar-sticky"
               aria-expanded={isNavOpen}
               onClick={toggleNav}
