@@ -1,9 +1,9 @@
 
 const NavList = () => {
   const navItems = [
-    { href: "/", label: "Join Us" },
+    { href: "#joinus", label: "Join Us" },
     { href: "/about", label: "About" },
-    { href: "/", label: "Guarantee" },
+    { href: "#guarantee", label: "Guarantee" },
   ];
 
   return (

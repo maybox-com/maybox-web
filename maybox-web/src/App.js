@@ -17,15 +17,15 @@ function App() {
     <div className='bg-img'>
       <div className="container mx-auto scroll-behavior: smooth;">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/resetpassword" element={<ForgotPassword />} />
+          <Route path="/resetpassword" element={<ForgotPassword />} /> */}
           <Route path="*" element={<Lost />} />
-          <Route path="/landing" element={<LandingPage />} />
+          {/* <Route path="/landing" element={<LandingPage />} /> */}
         </Routes>
       </div>
     </div>

@@ -1,15 +1,15 @@
 import React from "react";
 import { Player } from "@lordicon/react";
 import LordIcon from "./LordIcon";
-import Tag from "../../assets/images/tag-1.png"
-import Check from "../../assets/images/check-mark.png"
-import Hand from "../../assets/images/hand-up.png"
+import Tag from "../../assets/images/tag-1.png";
+import Check from "../../assets/images/check-mark.png";
+import Hand from "../../assets/images/hand-up.png";
 import Guarantee from "./Guarantee";
 import WaitlistForm from "./Waitlist";
 
 export default function Body() {
   return (
-    <div className="flex flex-col items-center mt-20 justify-center min-h-screen text-black">
+    <div className="flex flex-col items-center mt-20 justify-center min-h-screen text-black" data-aos="fade-up">
       <div className="div-1 relative container mx-auto  text-center px-4">
         <h1 className="text-4xl sm:text-5xl text-center md:text-6xl font-playtip tracking-tight font-bold text-customOrangeDark lg:text-center">
           Beauty, self-care and wellness that <br />
@@ -109,7 +109,7 @@ export default function Body() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-16">
           <div className="flex flex-col items-center">
-             <img
+            <img
               src={Check}
               alt="Do"
               className=" mb-4"
@@ -122,34 +122,26 @@ export default function Body() {
           </div>
 
           <div className="flex flex-col items-center">
-             <img
-              src={Tag}
-              alt="Do"
-              className=" mb-4"
-              width={80}
-              height={80}
-            />
+            <img src={Tag} alt="Do" className=" mb-4" width={80} height={80} />
             <p className="text-gray-600 mt-2 text-center">
               Save 20%, our prices are affordable
             </p>
           </div>
 
           <div className="flex flex-col items-center">
-             <img
-              src={Hand}
-              alt="Do"
-              className=" mb-4"
-              width={80}
-              height={80}
-            />
+            <img src={Hand} alt="Do" className=" mb-4" width={80} height={80} />
             <p className="text-gray-600 mt-2 text-center">
               Pause or cancel at any time.
             </p>
           </div>
         </div>
       </div>
-      <Guarantee />
-      <WaitlistForm />
+      <div id="guarantee">
+        <Guarantee />
+      </div>
+      <div id="joinus">
+        <WaitlistForm />
+      </div>
     </div>
   );
 }
