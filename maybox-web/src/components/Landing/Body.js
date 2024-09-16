@@ -1,8 +1,11 @@
-import {React, useEffect, useRef } from "react";
-import Smilingwomen from "../../assets/images/women-smiling.png";
-import { Player } from '@lordicon/react';
-
-const ICON = require('./assets/lock.json');
+import React from "react";
+import { Player } from "@lordicon/react";
+import LordIcon from "./LordIcon";
+import Tag from "../../assets/images/tag-1.png"
+import Check from "../../assets/images/check-mark.png"
+import Hand from "../../assets/images/hand-up.png"
+import Guarantee from "./Guarantee";
+import WaitlistForm from "./Waitlist";
 
 export default function Body() {
   return (
@@ -30,45 +33,11 @@ export default function Body() {
           </a>
         </div>
       </div>
-      <div className="div-2 mt-8 lg:mt-10 flex justify-center lg:justify-end">
-        <img
-          src={Smilingwomen} // Make sure to replace with your actual image path
-          alt="Beauty products"
-          className=""
-          width={1000}
-        />
-      </div>
-      <div className="flex flex-col gap-8 items-center text-center mt-8">
-        {/* Quote Section */}
-        <p className="text-lg font-neueEinstellung text-gray-700">
-          "Every Package is Quality tested to the Nth degree"
-        </p>
 
-        {/* Stars Section */}
-        <div className="flex mb-8 space-x-2">
-          {[...Array(5)].map((_, index) => (
-            <svg
-              key={index}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 400 400"
-              strokeWidth={2}
-              width="400"
-              height="400"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                xmlns="http://www.w3.org/2000/svg"
-                d="M97.083 349.999L124.166 232.915L33.333 154.165L153.333 143.749L200 33.332L246.666 143.749L366.666 154.165L275.833 232.915L302.916 349.999L200 287.915L97.083 349.999Z"
-                fill="#FBA013"
-              />
-            </svg>
-          ))}
-        </div>
-      </div>
-      <div className="w-full font-neueEinstellung bg-[#FCF5EB] py-16">
+      {/* Image Grid Section with Icons */}
+      <div className="w-full font-neueEinstellung mt-8 bg-[#FCF5EB] py-16">
         <div className="text-center mb-8">
-          <p className="text-customOrangeDark uppercase text-sm font-playtip tracking-widest font-semibold">
+          <p className="text-[#FBA013] uppercase text-sm font-playtip tracking-widest font-semibold">
             The Benefits
           </p>
           <h2 className="text-3xl font-bold text-gray-800">Feel balanced.</h2>
@@ -77,14 +46,110 @@ export default function Body() {
           </p>
         </div>
 
-        {/* Images grid or other content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-16">
-          {/* Replace these with actual images or content */}
-          <div className="bg-gray-300 h-64"></div>
-          <div className="bg-gray-300 h-64"></div>
-          <div className="bg-gray-300 h-64"></div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://images.pexels.com/photos/15829509/pexels-photo-15829509/free-photo-of-portrait-of-a-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Feel"
+              width={350}
+              height={300}
+              className=" mb-4"
+            />
+            <LordIcon src="https://cdn.lordicon.com/jjoolpwc.json" />
+            <h3 className="text-xl font-bold mt-4">FEEL</h3>
+            <p className="text-gray-600 mt-2 text-center">
+              Let us help you <span className="font-bold">feel</span> glamorous
+              and beautiful.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img
+              src="https://images.pexels.com/photos/15829509/pexels-photo-15829509/free-photo-of-portrait-of-a-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Look"
+              width={350}
+              height={300}
+              className=" mb-4"
+            />
+            <LordIcon src="https://cdn.lordicon.com/zpwnkfbk.json" />
+            <h3 className="text-xl font-bold mt-4">LOOK</h3>
+            <p className="text-gray-600 mt-2 text-center">
+              Let us help you <span className="font-bold">look</span> bold with
+              a natural glow.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img
+              src="https://images.pexels.com/photos/15829509/pexels-photo-15829509/free-photo-of-portrait-of-a-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Do"
+              width={350}
+              height={300}
+              className=" mb-4"
+            />
+            <LordIcon src="https://cdn.lordicon.com/jyrzvbtn.json" />
+            <h3 className="text-xl font-bold mt-4">DO</h3>
+            <p className="text-gray-600 mt-2 text-center">
+              Let us help inspire you to <span className="font-bold">do</span>{" "}
+              good work.
+            </p>
+          </div>
         </div>
       </div>
+
+      <div className="w-full mt-[8em] font-neueEinstellung bg-[#FCF5EB] py-16">
+        <div className="text-center mb-8">
+          <p className="text-[#FBA013] uppercase text-sm font-playtip tracking-widest font-semibold">
+            MEMBERSHIP PERKS
+          </p>
+          <h2 className="text-3xl font-bold text-gray-800">
+            Feeling better, made easier.
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-16">
+          <div className="flex flex-col items-center">
+             <img
+              src={Check}
+              alt="Do"
+              className=" mb-4"
+              width={80}
+              height={80}
+            />
+            <p className="text-gray-600 mt-2 text-center">
+              Convinently delivered on your schedule.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center">
+             <img
+              src={Tag}
+              alt="Do"
+              className=" mb-4"
+              width={80}
+              height={80}
+            />
+            <p className="text-gray-600 mt-2 text-center">
+              Save 20%, our prices are affordable
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center">
+             <img
+              src={Hand}
+              alt="Do"
+              className=" mb-4"
+              width={80}
+              height={80}
+            />
+            <p className="text-gray-600 mt-2 text-center">
+              Pause or cancel at any time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <Guarantee />
+      <WaitlistForm />
     </div>
   );
 }
