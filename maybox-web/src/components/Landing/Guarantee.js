@@ -34,7 +34,7 @@ export default function Guarantee() {
             />
             <div>
               <p className=" text-start font-semibold">Try Maybox Risk-Free</p>
-              <p className="text-gray-600 text-start text-sm">Shipping and returns</p>
+              <p className="text-gray-600 text-start text-sm">We’ve got your back with easy returns</p>
             </div>
           </li>
 
@@ -48,7 +48,7 @@ export default function Guarantee() {
             />
             <div>
               <p className="font-semibold text-start">No Fuzzy Haze</p>
-              <p className="text-gray-600 text-sm">Feel better and keep a clear head.</p>
+              <p className="text-gray-600 text-sm">Glow up, feel great—no confusion, no stress</p>
             </div>
           </li>
 
@@ -61,8 +61,8 @@ export default function Guarantee() {
               height={35}
             />
             <div>
-              <p className="font-semibold text-start">Ships All Across Nigeria (For Now)</p>
-              <p className="text-gray-600 text-sm text-start">No prescription needed.</p>
+              <p className="font-semibold text-start">Ships Only to Port Harcourt (For Now)</p>
+              <p className="text-gray-600 text-sm text-start">Sorry, rest of Nigeria, we’re working on it!</p>
             </div>
           </li>
         </ul>

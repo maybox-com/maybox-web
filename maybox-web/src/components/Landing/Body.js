@@ -103,7 +103,7 @@ export default function Body() {
             MEMBERSHIP PERKS
           </p>
           <h2 className="text-3xl font-medium text-black">
-            Feeling better, made easier.
+           Glow better, stress less.
           </h2>
         </div>
 
@@ -116,23 +116,26 @@ export default function Body() {
               width={80}
               height={80}
             />
-            <p className="text-gray-600 mt-2 text-center">
-              Convinently delivered on your schedule.
+            <p className="text-black mt-2 text-2xl text-center">
+              Perfectly timed to your routine.
             </p>
+            <span className="text-center text-gray-600">Get your self-care essentials delivered exactly when you need them. No more waiting.</span>
           </div>
 
           <div className="flex flex-col items-center">
             <img src={Tag} alt="Do" className=" mb-4" width={80} height={80} />
-            <p className="text-gray-600 mt-2 text-center">
-              Save 20%, our prices are affordable
+            <p className="text-black mt-2 text-2xl text-center">
+              Save more, because taking care of yourself shouldn’t break the bank.
             </p>
+            <span className="text-center text-gray-600">Get your self-care essentials delivered exactly when you need them. No more waiting.</span>
           </div>
 
           <div className="flex flex-col items-center">
             <img src={Hand} alt="Do" className=" mb-4" width={80} height={80} />
-            <p className="text-gray-600 mt-2 text-center">
-              Pause or cancel at any time.
+            <p className="text-black mt-2 text-2xl text-center">
+              You're in control.
             </p>
+            <span className="text-center text-gray-600">Pause, skip, or cancel anytime. It’s self-care on your terms.</span>
           </div>
         </div>
       </div>

@@ -49,9 +49,7 @@ export default function WaitlistForm() {
       <Toaster position="top-center" reverseOrder={false} />
       <h2 className="text-4xl font-semibold">Stay in touch</h2>
       <p className="text-center text-gray-600">
-        Join our email list to get all the latest{" "}
-        <span className="font-bold">maybox</span> news and first access to
-        offers right to your inbox
+       Don’t sleep on it! Join our email list and be the first to know about Maybox drops, exclusive deals, and all the glow-up secrets—straight to your inbox.
       </p>
 
       <form onSubmit={handleSubmit} className="flex items-center">
