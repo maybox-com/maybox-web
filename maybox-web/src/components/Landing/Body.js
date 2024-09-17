@@ -9,7 +9,10 @@ import WaitlistForm from "./Waitlist";
 
 export default function Body() {
   return (
-    <div className="flex flex-col items-center mt-20 justify-center min-h-screen text-black" data-aos="fade-up">
+    <div
+      className="flex flex-col items-center mt-20 justify-center min-h-screen text-black"
+      data-aos="fade-up"
+    >
       <div className="div-1 relative container mx-auto  text-center px-4">
         <h1 className="text-4xl sm:text-5xl text-center md:text-6xl font-playtip tracking-tight font-bold text-customOrangeDark lg:text-center">
           Beauty, self-care and wellness that <br />
@@ -18,15 +21,14 @@ export default function Body() {
           </span>
         </h1>
 
-        <p className="mt-8 font-neueEinstellung sm:text-center md:text-xl text-customOrangeDark text-center">
+        <p className="mt-8 font-neueEinstellung text-customOrangeDark text-center text-base sm:text-lg md:text-xl leading-relaxed">
           A customizable box of premium beauty, self-care & wellness products
-          <br className="hidden sm:block" />
           delivered monthly, just for you whenever and however you need it.
         </p>
 
         <div className="header-btn font-neueEinstellung mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <a
-            href="#"
+            href="#joinus"
             className="px-6 py-3 bg-[#FBA013] text-white hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
           >
             Build Your Box
@@ -103,7 +105,7 @@ export default function Body() {
             MEMBERSHIP PERKS
           </p>
           <h2 className="text-3xl font-medium text-black">
-           Glow better, stress less.
+            Glow better, stress less.
           </h2>
         </div>
 
@@ -119,15 +121,22 @@ export default function Body() {
             <p className="text-black mt-2 text-2xl text-center">
               Perfectly timed to your routine.
             </p>
-            <span className="text-center text-gray-600">Get your self-care essentials delivered exactly when you need them. No more waiting.</span>
+            <span className="text-center text-gray-600">
+              Get your self-care essentials delivered exactly when you need
+              them. No more waiting.
+            </span>
           </div>
 
           <div className="flex flex-col items-center">
             <img src={Tag} alt="Do" className=" mb-4" width={80} height={80} />
             <p className="text-black mt-2 text-2xl text-center">
-              Save more, because taking care of yourself shouldn’t break the bank.
+              Save more, because taking care of yourself shouldn’t break the
+              bank.
             </p>
-            <span className="text-center text-gray-600">Get your self-care essentials delivered exactly when you need them. No more waiting.</span>
+            <span className="text-center text-gray-600">
+              Get your self-care essentials delivered exactly when you need
+              them. No more waiting.
+            </span>
           </div>
 
           <div className="flex flex-col items-center">
@@ -135,7 +144,9 @@ export default function Body() {
             <p className="text-black mt-2 text-2xl text-center">
               You're in control.
             </p>
-            <span className="text-center text-gray-600">Pause, skip, or cancel anytime. It’s self-care on your terms.</span>
+            <span className="text-center text-gray-600">
+              Pause, skip, or cancel anytime. It’s self-care on your terms.
+            </span>
           </div>
         </div>
       </div>
