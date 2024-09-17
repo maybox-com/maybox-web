@@ -58,6 +58,7 @@ export default function WaitlistForm() {
           className="border border-gray-300 py-2 px-4 rounded-l-lg w-64"
           placeholder="johndoe@gmail.com"
           value={email}
+          autoComplete="true"
           onChange={(e) => setEmail(e.target.value)}
           required
         />
