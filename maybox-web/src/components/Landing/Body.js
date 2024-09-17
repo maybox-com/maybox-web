@@ -49,11 +49,11 @@ export default function Body() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-16">
           <div className="flex flex-col items-center">
             <img
-              src="https://images.pexels.com/photos/15829509/pexels-photo-15829509/free-photo-of-portrait-of-a-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://images.pexels.com/photos/3736281/pexels-photo-3736281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=11"
               alt="Feel"
               width={350}
               height={300}
-              className=" mb-4"
+              className="border-2 border-black mb-4"
             />
             <LordIcon src="https://cdn.lordicon.com/jjoolpwc.json" />
             <h3 className="text-xl font-bold mt-4 text-black">FEEL</h3>
@@ -69,7 +69,7 @@ export default function Body() {
               alt="Look"
               width={350}
               height={300}
-              className=" mb-4"
+              className="border-2 border-black mb-4"
             />
             <LordIcon src="https://cdn.lordicon.com/zpwnkfbk.json" />
             <h3 className="text-xl font-bold mt-4 text-black">LOOK</h3>
@@ -81,11 +81,11 @@ export default function Body() {
 
           <div className="flex flex-col items-center">
             <img
-              src="https://images.pexels.com/photos/15829509/pexels-photo-15829509/free-photo-of-portrait-of-a-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://images.pexels.com/photos/6978068/pexels-photo-6978068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Do"
               width={350}
               height={300}
-              className=" mb-4"
+              className="border-2 border-black mb-4"
             />
             <LordIcon src="https://cdn.lordicon.com/jyrzvbtn.json" />
             <h3 className="text-xl font-bold mt-4 text-black">DO</h3>

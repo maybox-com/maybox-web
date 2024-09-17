@@ -9,10 +9,11 @@ export default function Guarantee() {
     <div className="flex flex-col font-neueEinstellung lg:flex-row items-center justify-between mt-20 px-4 lg:px-16">
       <div className="flex-shrink-0">
         <img
-          src={GuaranteeImage} 
+        className="border-2 border-black"
+          src="https://images.pexels.com/photos/6977992/pexels-photo-6977992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=11"
           alt="Woman smiling with skincare"
-          width={500}
-          height={500}
+           width={350}
+           height={250}
         />
       </div>
 
