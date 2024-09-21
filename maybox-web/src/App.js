@@ -11,6 +11,7 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgottenPassword';
 import LandingPage from './components/Landing/LandingPage';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/resetpassword" element={<ForgotPassword />} /> */}
           <Route path="*" element={<Lost />} />
           {/* <Route path="/landing" element={<LandingPage />} /> */}
+          <Analytics />
         </Routes>
       </div>
     </div>
