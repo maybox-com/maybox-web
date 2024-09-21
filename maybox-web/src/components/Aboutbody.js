@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../assets/styles/Aboutbody.css";
 import racially from "../assets/images/portrait-diverse-latin-people.jpg";
 import sustain from "../assets/images/top-view-smartphone-template-workspace.jpg";
-import empower from "../assets/images/togetherness-group-women-hugging.jpg";
+import unbox from "../assets/images/medium-shot-woman-using-vanity-case.jpg";
 
 const Aboutbody = () => {
   return (
@@ -56,7 +56,7 @@ const Aboutbody = () => {
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
           <div className="flex justify-center">
             <img
-            src={racially}
+            src={unbox}
               alt=""
               className="w-64 md:w-96 mt-12"
             />
@@ -64,18 +64,10 @@ const Aboutbody = () => {
 
           <div className="w-full md:w-1/4 px-4">
             <h2 className="font-medium text-customOrangeDark font-playtip text-xl md:text-3xl mb-6">
-              Racial Equity
+            Unbox Monthly Glow
             </h2>
             <p className="text-[15px] font-neueEinstellung">
-              For the Black members, Indigenous members, and People of Color
-              within our company and the beauty casual community to be and feel
-              authentically seen at Birchbox. We intentionally partner with
-              BIPOC-founded, owned, and run beauty brands, making it easy for
-              our community to shop with their values while finding products
-              that suit their needs. We're focused on building an inclusive work
-              environment where people feel welcomed and can succeed. We audit
-              and innovate company-wide practices to best serve our BIPOC
-              subscribers and customers.
+            Maybox is here to make your beauty journey simpler, more exciting, and tailored to your unique style. Every month, we curate a box filled with products designed to help you look and feel your best—on your own terms. The result? That special feeling of joy, discovery, and self-care when your Maybox arrives, reminding you to take a few moments just for yourself.
             </p>
           </div>
         </div>
@@ -109,7 +101,7 @@ const Aboutbody = () => {
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
           <div className="flex justify-center">
             <img
-              src={empower}
+              src={racially}
               alt=""
               className="w-64 md:w-96 mt-12"
             />
@@ -117,18 +109,10 @@ const Aboutbody = () => {
 
           <div className="w-full md:w-1/4 px-4">
             <h2 className="font-medium text-customOrangeDark font-playtip text-xl md:text-3xl mb-6">
-              Empowering Women
+            Racial Equity
             </h2>
             <p className="text-[15px] font-neueEinstellung">
-              As a woman-run, led, and founded business, we’re committed to
-              lifting up and celebrating women in the beauty industry to honor
-              their accomplishments. We intentionally partner with
-              women-founded, owned, and run beauty brands, making it easy for
-              our community to shop with their values while finding product that
-              suit their needs. We engage in opportunities to speak to and
-              mentor women in all stages and types of careers. We partner with
-              women-founded, owned, and run companies and non-profits with
-              women-centered missions.
+At Maybox, we are dedicated to fostering a culture of inclusivity and empowerment. We believe that beauty is for everyone, and we strive to create an environment where all voices are heard and celebrated. Our commitment to equity drives us to ensure that our products and practices reflect the diversity of our community, making beauty accessible and authentic for all.
             </p>
           </div>
         </div>
