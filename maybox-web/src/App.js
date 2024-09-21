@@ -17,6 +17,7 @@ function App() {
   return (
     <div className='bg-img'>
       <div className="container mx-auto scroll-behavior: smooth;">
+        <Analytics />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
@@ -27,7 +28,6 @@ function App() {
           <Route path="/resetpassword" element={<ForgotPassword />} /> */}
           <Route path="*" element={<Lost />} />
           {/* <Route path="/landing" element={<LandingPage />} /> */}
-          <Analytics />
         </Routes>
       </div>
     </div>
