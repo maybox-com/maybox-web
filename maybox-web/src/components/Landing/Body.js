@@ -6,6 +6,7 @@ import Check from "../../assets/images/check-mark.png";
 import Hand from "../../assets/images/hand-up.png";
 import Guarantee from "./Guarantee";
 import WaitlistForm from "./Waitlist";
+import Steps from "../UI/Steps";
 
 export default function Body() {
   return (
@@ -37,7 +38,7 @@ export default function Body() {
       </div>
 
       {/* Image Grid Section with Icons */}
-      <div className="w-full font-neueEinstellung mt-8 bg-[#FCF5EB] py-16">
+      <div className="w-full font-neueEinstellung mt-8 mb-8 bg-[#FCF5EB] py-16">
         <div className="text-center mb-8">
           <p className="text-[#FBA013] uppercase text-sm tracking-widest font-semibold">
             The Benefits
@@ -99,6 +100,9 @@ export default function Body() {
         </div>
       </div>
 
+
+      <Steps />
+
       <div className="w-full mt-[8em] font-neueEinstellung bg-[#FCF5EB] py-16">
         <div className="text-center mb-8">
           <p className="text-[#FBA013] uppercase text-sm  tracking-widest font-semibold">
@@ -126,6 +130,7 @@ export default function Body() {
               them. No more waiting.
             </span>
           </div>
+          
 
           <div className="flex flex-col items-center">
             <img src={Tag} alt="Do" className=" mb-4" width={80} height={80} />

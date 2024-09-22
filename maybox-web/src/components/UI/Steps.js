@@ -5,7 +5,7 @@ const steps = [
     title: "Step 1",
     description: "Share your beauty goals",
     details: "Answer a few questions to help us match you with the right products for your skin, hair, and style.",
-    bgColor: "bg-customRed",
+    bgColor: "bg-[#FBA013]",
   },
   {
     title: "Step 2",
@@ -18,7 +18,7 @@ const steps = [
     title: "Step 3",
     description: "Discover new beauty",
     details: "Try new products each month, find your favorites in our Shop, and be effortlessly you.",
-    bgColor: "bg-customOrangeLight",
+    bgColor: "bg-[#FCF5EB]",
     
   }
 ];
