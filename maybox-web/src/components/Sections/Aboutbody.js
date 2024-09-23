@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FaStar, FaRegHeart } from "react-icons/fa";
 import "../../assets/styles/Aboutbody.css";
 
 const Aboutbody = () => {
@@ -9,16 +7,18 @@ const Aboutbody = () => {
       <section className="sect1">
         <div className="relative flex flex-col text-customOrangeDark items-center justify-center min-h-screen px-4">
           <div className="absolute bottom-10 left-4 md:bottom-28 md:left-8 z-10 bg-white p-4 md:p-16">
-            <p className="font-semibold pl-[4px] tracking-tight text-[15px] font-neueEinstellung">Joy cannot be contained</p>
-            <p className="font-normal font-playtip text-2xl md:text-5xl mb-4 md:mb-8">
-              Meet your best <br /> friend in beauty.
+            <p className="font-semibold pl-[4px] tracking-tight text-[15px] font-neueEinstellung">
+              Unbox Your Glow Up!
             </p>
-            <Link
-              to="#"
-              className="bg-customOrangeDark font-neueEinstellung hover:bg-customRed py-2 px-5 md:py-3 md:px-7 mt-4 md:mt-10 text-white"
-            >
-              Get It Here
-            </Link>
+            <p className="font-normal font-playtip text-2xl md:text-5xl mb-4 md:mb-8">
+              Our self-care sidekick is <br /> just a click away. 
+            </p>
+             <a
+            href="#joinus"
+            className="px-6 py-3 bg-[#FBA013] text-white hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
+          >
+            Build Your Box
+          </a>
           </div>
         </div>
       </section>
@@ -48,7 +48,7 @@ const Aboutbody = () => {
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
           <div className="flex justify-center">
             <img
-              src="https://www.birchbox.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fbirchbox%2F9483d55e-b56e-4532-bdb9-98b857cc2806_pexels-rodnae-productions-8760417%2B%25281%2529%2B1.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C640%2C400%26w%3D600%26h%3D375&w=640&q=75"
+              src="https://images.pexels.com/photos/5202461/pexels-photo-5202461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
               className="w-64 md:w-96 mt-12"
             />
@@ -56,18 +56,14 @@ const Aboutbody = () => {
 
           <div className="w-full md:w-1/4 px-4">
             <h2 className="font-medium text-customOrangeDark font-playtip text-xl md:text-3xl mb-6">
-              Racial Equity
+              Self-Care, Made for You
             </h2>
             <p className="text-[15px] font-neueEinstellung">
-              For the Black members, Indigenous members, and People of Color
-              within our company and the beauty casual community to be and feel
-              authentically seen at Birchbox. We intentionally partner with
-              BIPOC-founded, owned, and run beauty brands, making it easy for
-              our community to shop with their values while finding products
-              that suit their needs. We're focused on building an inclusive work
-              environment where people feel welcomed and can succeed. We audit
-              and innovate company-wide practices to best serve our BIPOC
-              subscribers and customers.
+              At Maybox, we’re passionate about inclusivity and individuality.
+              Every box is made just for you—because your self-care journey is
+              personal, and we’re here to support that. Oh, and did we mention?
+              We’re all about local pride, currently delivering straight to Port
+              Harcourt (with plans to expand soon!).
             </p>
           </div>
         </div>
@@ -89,7 +85,7 @@ const Aboutbody = () => {
 
           <div className="flex justify-center">
             <img
-              src="https://www.birchbox.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fbirchbox%2Fda5c76ff-f56a-47ce-88c6-a2fa628b7043_pexels-vlada-karpovich-4668362%2B1.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C640%2C400%26w%3D600%26h%3D375&w=640&q=75"
+              src="https://images.pexels.com/photos/3636512/pexels-photo-3636512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
               className="w-64 md:w-96"
             />
@@ -101,7 +97,7 @@ const Aboutbody = () => {
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
           <div className="flex justify-center">
             <img
-              src="https://www.birchbox.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fbirchbox%2F2782482b-59b8-44af-97f6-b0c6083a5a94_katy-anne-nTP8aZjedqI-unsplash%2B%25281%2529%2B1.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C640%2C400%26w%3D600%26h%3D375&w=640&q=75"
+              src="https://images.pexels.com/photos/4909256/pexels-photo-4909256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
               className="w-64 md:w-96 mt-12"
             />
@@ -109,18 +105,17 @@ const Aboutbody = () => {
 
           <div className="w-full md:w-1/4 px-4">
             <h2 className="font-medium text-customOrangeDark font-playtip text-xl md:text-3xl mb-6">
-              Empowering Women
+              Empowering Individuals
             </h2>
             <p className="text-[15px] font-neueEinstellung">
-              As a woman-run, led, and founded business, we’re committed to
-              lifting up and celebrating women in the beauty industry to honor
-              their accomplishments. We intentionally partner with
-              women-founded, owned, and run beauty brands, making it easy for
-              our community to shop with their values while finding product that
-              suit their needs. We engage in opportunities to speak to and
-              mentor women in all stages and types of careers. We partner with
-              women-founded, owned, and run companies and non-profits with
-              women-centered missions.
+              At Maybox, we're committed to celebrating and uplifting everyone
+              in the beauty and wellness community—regardless of gender. We
+              intentionally partner with brands founded by diverse creators,
+              making it easy for our community to discover products that align
+              with their values. Whether you're just starting your self-care
+              journey or deepening it, Maybox is here to support your unique
+              needs. Inclusivity is at the heart of everything we do, and we
+              strive to create opportunities for all people to thrive.
             </p>
           </div>
         </div>
