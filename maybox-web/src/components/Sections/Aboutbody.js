@@ -11,14 +11,14 @@ const Aboutbody = () => {
               Unbox Your Glow Up!
             </p>
             <p className="font-normal font-playtip text-2xl md:text-5xl mb-4 md:mb-8">
-              Our self-care sidekick is <br /> just a click away. 
+              Our self-care sidekick is <br /> just a click away.
             </p>
-             <a
-            href="#joinus"
-            className="px-6 py-3 bg-[#FBA013] text-white hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
-          >
-            Build Your Box
-          </a>
+            <a
+              href="/"
+              className="px-6 py-3 bg-[#FBA013] text-white font-neueEinstellung hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
+            >
+              Build Your Box
+            </a>
           </div>
         </div>
       </section>
@@ -46,15 +46,15 @@ const Aboutbody = () => {
 
       <section className="mt-24 px-4">
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
-          <div className="flex justify-center">
+          <div className="flex justify-center md:w-1/2">
             <img
               src="https://images.pexels.com/photos/5202461/pexels-photo-5202461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-              className="w-64 md:w-96 mt-12"
+              alt="Self-care image"
+              className="w-full h-auto object-cover mt-12 rounded-lg"
             />
           </div>
 
-          <div className="w-full md:w-1/4 px-4">
+          <div className="w-full md:w-1/3 px-4 mt-12 md:mt-12">
             <h2 className="font-medium text-customOrangeDark font-playtip text-xl md:text-3xl mb-6">
               Self-Care, Made for You
             </h2>
@@ -69,9 +69,9 @@ const Aboutbody = () => {
         </div>
       </section>
 
-      <section className="mt-52 px-4">
+      <section className="mt-24 px-4">
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
-          <div className="w-full md:w-1/3 px-4 mt-12">
+          <div className="w-full md:w-1/3 px-4 mt-6 md:mt-12">
             <h2 className="font-medium text-customOrangeDark font-playtip text-xl md:text-3xl mb-6">
               Sustainability
             </h2>
@@ -83,11 +83,11 @@ const Aboutbody = () => {
             </p>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center md:w-1/2">
             <img
               src="https://images.pexels.com/photos/3636512/pexels-photo-3636512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-              className="w-64 md:w-96"
+              alt="Sustainability"
+              className="w-full h-auto object-cover mt-6 md:mt-0 rounded-lg"
             />
           </div>
         </div>
@@ -95,15 +95,15 @@ const Aboutbody = () => {
 
       <section className="mt-52 mb-32 px-4">
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
-          <div className="flex justify-center">
+          <div className="flex justify-center md:w-1/2">
             <img
               src="https://images.pexels.com/photos/4909256/pexels-photo-4909256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-              className="w-64 md:w-96 mt-12"
+              alt="Empowering Individuals"
+              className="w-full h-auto object-cover mt-12 rounded-lg"
             />
           </div>
 
-          <div className="w-full md:w-1/4 px-4">
+          <div className="w-full md:w-1/3 px-4 mt-6 md:mt-12">
             <h2 className="font-medium text-customOrangeDark font-playtip text-xl md:text-3xl mb-6">
               Empowering Individuals
             </h2>
