@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/Aboutbody.css";
 import racially from "../assets/images/portrait-diverse-latin-people.jpg";
-import sustain from "../assets/images/top-view-smartphone-template-workspace.jpg";
-import unbox from "../assets/images/medium-shot-woman-using-vanity-case.jpg";
-
 const Aboutbody = () => {
   return (
     <>
@@ -56,7 +53,7 @@ const Aboutbody = () => {
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
           <div className="flex justify-center">
             <img
-            src={unbox}
+            src="https://img.freepik.com/free-photo/medium-shot-woman-using-vanity-case_23-2149764768.jpg?t=st=1727051376~exp=1727054976~hmac=6b3288418be64d96339af66ad49a1d0e5ad8151d123adff8a3971c38277e658a&w=1380"
               alt=""
               className="w-64 md:w-96 mt-12"
             />
@@ -89,7 +86,7 @@ const Aboutbody = () => {
 
           <div className="flex justify-center">
             <img
-              src={sustain}
+              src="https://img.freepik.com/free-photo/top-view-smartphone-template-workspace_23-2148175215.jpg?t=st=1727051532~exp=1727055132~hmac=fc653fd864fa922a36b46cb09efecbe24dae43fe85db63196d3e43e34bf7b7cf&w=1380"
               alt=""
               className="w-64 md:w-96"
             />
@@ -101,7 +98,7 @@ const Aboutbody = () => {
         <div className="flex flex-col md:flex-row justify-center md:space-x-6">
           <div className="flex justify-center">
             <img
-              src={racially}
+              src="https://img.freepik.com/free-photo/portrait-volunteers-who-organized-donations-charity_23-2149230571.jpg?t=st=1727051960~exp=1727055560~hmac=367f411574ce8d01d007059dde729dfd8544ece9be42ebef7ca6c3b36de1fec1&w=1380"
               alt=""
               className="w-64 md:w-96 mt-12"
             />
