@@ -1,5 +1,6 @@
 .sect1 {
-    background-image: url("../images/Fall2023-model-web.jpg");
+    /* background-image: url("../images/Fall2023-model-web.jpg"); */
+    background-image: url("https://img.freepik.com/free-photo/top-view-mystery-box-concept_23-2149516449.jpg?t=st=1727052475~exp=1727056075~hmac=455c30d22b8fc94c0ca591a67b800789a0c6a4b1af15bed519486334ef8bc3c6&w=1380");
     background-size: cover;
     background-position: center;
     width: 100%;
