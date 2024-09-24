@@ -1,18 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import withMT from "@material-tailwind/html/utils/withMT";
+ 
+export default withMT({
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
       colors: {
         customWhite: '#FFFFFF',
-        customPink: '#F85C70',
-        customOrangeDark: '#A03302',
-        customRed: '#E43D40',
-        customOrangeLight: '#ED6C30',
+        customPink: '#6EACDA',
+        customOrangeDark: '#021526',
+        customRed: '#03346E',
+        customOrangeLight: '#FF9B50',
       },
       fontFamily: {
         playtip: ['Platypi', 'san-serif'],
         ordinary: ['Ordinary', 'sans-serif'],
+        clash: ['ClashDisplay', 'sans-serif'],
         neueEinstellung: ['Neue Einstellung', 'sans-serif'],
       },
       fontWeight: {
@@ -28,6 +31,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+        require('@tailwindcss/forms'),
+  ],
+})
 

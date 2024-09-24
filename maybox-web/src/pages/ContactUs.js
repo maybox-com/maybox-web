@@ -1,7 +1,8 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import Contactus from "../components/Contactus";
-import Footer from "../components/Footer";
+
+import React from 'react';
+import Navbar from '../components/Layout/Navbar';
+import Contactus from '../components/UI/Contactus-Body';
+import Footer from '../components/Layout/Footer';
 
 function Contact() {
   return (

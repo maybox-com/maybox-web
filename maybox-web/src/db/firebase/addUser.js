@@ -32,3 +32,5 @@ const AddUser = () => {
       console.error('Error adding document: ', e);
     }
   }};
+
+  addUser('John Doe', 'john.doe@example.com', 'securepassword123', '+1234567890', '123 Main St');

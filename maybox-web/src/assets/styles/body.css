@@ -1,5 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: auto; /* Allow scrolling on the page */
+}
 
 
+@media (max-width: 640px) {
+  .header-btn {
+      gap: 1em;
+  }
+
+  .hero {
+      background-image: url('../images/maybox-mb-bg.jpg');
+  }
+}
 .hero{
     background-image: url('../images/header-image.jpg');
     background-size: cover;
