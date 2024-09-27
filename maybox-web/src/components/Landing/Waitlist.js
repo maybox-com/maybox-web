@@ -45,10 +45,10 @@ export default function WaitlistForm() {
   };
 
   return (
-    <div className="flex flex-col font-neueEinstellung mt-10 items-center gap-6">
+    <div className="flex flex-col font-neueEinstellung mt-10 items-center px-6 gap-6">
       <Toaster position="top-center" reverseOrder={false} />
       <h2 className="text-4xl font-semibold">Stay in touch</h2>
-      <p className="text-center text-gray-600">
+      <p className="text-center text-gray-600 ">
        Don’t sleep on it! Join our waitlist and be the first to know about Maybox drops, exclusive deals, and all the glow-up secrets—straight to your inbox.
       </p>
 
