@@ -1,5 +1,4 @@
-import React from "react";
-import { Player } from "@lordicon/react";
+import React, { useRef } from "react";
 import LordIcon from "./LordIcon";
 import Tag from "../../assets/images/tag-1.png";
 import Check from "../../assets/images/check-mark.png";
@@ -9,12 +8,17 @@ import WaitlistForm from "./Waitlist";
 import Steps from "../UI/Steps";
 
 export default function Body() {
+  const joinUsRef = useRef(null);
+  const scrollToJoinUs = () => {
+    joinUsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
       className="flex flex-col items-center mt-20 justify-center min-h-screen text-black"
       data-aos="fade-up"
     >
-      <div className="div-1 relative container mx-auto  text-center px-4">
+      <div className="div-1 relative container mx-auto text-center px-4">
         <h1 className="text-4xl sm:text-5xl text-center md:text-6xl font-playtip tracking-tight font-bold text-customOrangeDark lg:text-center">
           Beauty, self-care and wellness that <br />
           <span className="relative inline-block font-bold font-playtip">
@@ -28,12 +32,13 @@ export default function Body() {
         </p>
 
         <div className="header-btn font-neueEinstellung mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <a
-            href="#joinus"
+          {/* Replace the href link with an onClick handler */}
+          <button
+            onClick={scrollToJoinUs}
             className="px-6 py-3 bg-[#FBA013] text-white hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
           >
-            Build Your Box
-          </a>
+            Join the waitlist
+          </button>
         </div>
       </div>
 
@@ -45,7 +50,7 @@ export default function Body() {
           </p>
           <h2 className="text-3xl font-meduim text-black">Feel balanced.</h2>
           <p className="text-gray-600 mt-4">
-            Helping people feel, look, and do good.
+            Helping you feel, look your best.
           </p>
         </div>
 
@@ -100,7 +105,6 @@ export default function Body() {
         </div>
       </div>
 
-
       <Steps />
 
       <div className="w-full mt-[8em] font-neueEinstellung bg-[#FCF5EB] py-16">
@@ -130,10 +134,15 @@ export default function Body() {
               them. No more waiting.
             </span>
           </div>
-          
 
           <div className="flex flex-col items-center">
-            <img src={Tag} alt="Do" className=" mb-4" width={80} height={80} />
+            <img
+              src={Tag}
+              alt="Do"
+              className=" mb-4"
+              width={80}
+              height={80}
+            />
             <p className="text-black mt-2 text-2xl text-center">
               Save more, because taking care of yourself shouldn’t break the
               bank.
@@ -145,7 +154,13 @@ export default function Body() {
           </div>
 
           <div className="flex flex-col items-center">
-            <img src={Hand} alt="Do" className=" mb-4" width={80} height={80} />
+            <img
+              src={Hand}
+              alt="Do"
+              className=" mb-4"
+              width={80}
+              height={80}
+            />
             <p className="text-black mt-2 text-2xl text-center">
               You're in control.
             </p>
@@ -155,10 +170,13 @@ export default function Body() {
           </div>
         </div>
       </div>
+
       <div id="guarantee">
         <Guarantee />
       </div>
-      <div id="joinus">
+
+      {/* The target joinus section */}
+      <div id="joinus" ref={joinUsRef}>
         <WaitlistForm />
       </div>
     </div>

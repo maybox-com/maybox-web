@@ -63,7 +63,7 @@ export default function Guarantee() {
             />
             <div>
               <p className="font-semibold text-start">Ships Only to Port Harcourt (For Now)</p>
-              <p className="text-gray-600 text-sm text-start">Sorry, rest of Nigeria, we’re working on it!</p>
+              <p className="text-gray-600 text-sm text-start">Interstate shipping coming soon!</p>
             </div>
           </li>
         </ul>
