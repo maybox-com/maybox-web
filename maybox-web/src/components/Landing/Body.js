@@ -32,7 +32,7 @@ export default function Body() {
             href="#joinus"
             className="px-6 py-3 bg-[#FBA013] text-white hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
           >
-            Build Your Box
+            Join the waitlist
           </a>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function Body() {
           </p>
           <h2 className="text-3xl font-meduim text-black">Feel balanced.</h2>
           <p className="text-gray-600 mt-4">
-            Helping people feel, look, and do good.
+            Helping you feel, look your best.
           </p>
         </div>
 

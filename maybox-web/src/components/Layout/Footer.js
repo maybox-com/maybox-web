@@ -91,7 +91,7 @@ function Footer() {
             </div>
 
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
-              <div>
+              {/* <div>
                 <p class="font-medium text-customOrangeDark font-playtip">
                  Services
                 </p>
@@ -117,7 +117,7 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
               <div>
                 <p class="font-medium text-customOrangeDark font-playtip">
@@ -166,7 +166,7 @@ function Footer() {
                 </ul>
               </div>
 
-              <div>
+              {/* <div>
                 <p class="font-medium text-customOrangeDark font-playtip">
                   Legal
                 </p>
@@ -192,7 +192,7 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
 
