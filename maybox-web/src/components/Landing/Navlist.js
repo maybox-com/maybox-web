@@ -3,7 +3,7 @@ const NavList = () => {
   const navItems = [
     { href: "#joinus", label: "Join Us" },
     { href: "/about", label: "About" },
-    { href: "#guarantee", label: "Guarantee" },
+    { href: "/vendors", label: "Vendors" },
   ];
 
   return (

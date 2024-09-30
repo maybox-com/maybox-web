@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import LordIcon from "./LordIcon";
-import Tag from "../../assets/images/tag-1.png";
-import Check from "../../assets/images/check-mark.png";
-import Hand from "../../assets/images/hand-up.png";
+import Tag from "../../assets/images/TAG.svg";
+import Check from "../../assets/images/CALENDER.svg";
+import Hand from "../../assets/images/HAND.svg";
 import Guarantee from "./Guarantee";
 import WaitlistForm from "./Waitlist";
 import Steps from "../UI/Steps";
@@ -35,7 +35,7 @@ export default function Body() {
           {/* Replace the href link with an onClick handler */}
           <button
             onClick={scrollToJoinUs}
-            className="px-6 py-3 bg-[#FBA013] text-white hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
+            className="px-6 py-3 bg-[#FBA013] text-white  hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
           >
             Join the waitlist
           </button>

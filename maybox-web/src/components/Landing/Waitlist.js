@@ -1,11 +1,18 @@
 import { useState } from "react";
-import { getFirestore, collection, addDoc, query, where, getDocs } from "firebase/firestore"; 
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  query,
+  where,
+  getDocs,
+} from "firebase/firestore";
 import { db } from "../../firebase/firebase";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function WaitlistForm() {
   const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,10 +22,9 @@ export default function WaitlistForm() {
       return;
     }
 
-    setLoading(true); 
+    setLoading(true);
 
     try {
-
       const q = query(collection(db, "waitlist"), where("email", "==", email));
       const querySnapshot = await getDocs(q);
 
@@ -28,19 +34,18 @@ export default function WaitlistForm() {
         return;
       }
 
-  
       await addDoc(collection(db, "waitlist"), {
         email,
         timestamp: new Date(),
       });
 
       toast.success("Locked in, stay tuned 🥳");
-      setEmail(""); 
+      setEmail("");
     } catch (error) {
       console.error("Error adding email: ", error);
       toast.error("Something went wrong. Please try again!");
     } finally {
-      setLoading(false); 
+      setLoading(false);
     }
   };
 
@@ -49,7 +54,9 @@ export default function WaitlistForm() {
       <Toaster position="top-center" reverseOrder={false} />
       <h2 className="text-4xl font-semibold">Stay in touch</h2>
       <p className="text-center text-gray-600 ">
-       Don’t sleep on it! Join our waitlist and be the first to know about Maybox drops, exclusive deals, and all the glow-up secrets—straight to your inbox.
+        Don’t miss out! Join our waitlist and be the first to know about Maybox
+        drops, exclusive deals, and insider beauty tips—delivered
+        right to your inbox.
       </p>
 
       <form onSubmit={handleSubmit} className="flex items-center">
@@ -65,10 +72,12 @@ export default function WaitlistForm() {
         <button
           type="submit"
           data-ripple-light="true"
-          className={`py-3 px-6 bg-[#FBA013] text-white text-xs font-neueEinstellung hover:opacity-90 transition-all ${loading ? "opacity-50 cursor-not-allowed" : ""}`} 
-          disabled={loading} 
+          className={`py-3 px-6 bg-[#FBA013] text-white text-xs font-neueEinstellung hover:opacity-90 transition-all ${
+            loading ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+          disabled={loading}
         >
-          {loading ? "Processing" : "Join today"} 
+          {loading ? "Processing" : "Join today"}
         </button>
       </form>
     </div>

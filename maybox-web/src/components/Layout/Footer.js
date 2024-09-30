@@ -146,13 +146,13 @@ function Footer() {
                   </li>
 
                   <li>
-                    <a
+                    {/* <a
                       href="#"
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
                       Live Chat{" "}
-                    </a>
+                    </a> */}
                   </li>
                   <li>
                     <a
