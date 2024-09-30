@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Typewriter from "typewriter-effect"; // Import the Typewriter component
 import LordIcon from "./LordIcon";
 import Tag from "../../assets/images/TAG.svg";
 import Check from "../../assets/images/CALENDER.svg";
@@ -21,8 +22,15 @@ export default function Body() {
       <div className="div-1 relative container mx-auto text-center px-4">
         <h1 className="text-4xl sm:text-5xl text-center md:text-6xl font-playtip tracking-tight font-bold text-customOrangeDark lg:text-center">
           Beauty, self-care and wellness that <br />
-          <span className="relative inline-block font-bold font-playtip">
-            delivers!
+          <span className="relative inline-block text-[#FBA013] font-bold font-playtip">
+            <Typewriter
+              options={{
+                strings: ["delivers!", "inspires!", "rejuvenates!", "refreshes!"],
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 50,
+              }}
+            />
           </span>
         </h1>
 
@@ -32,7 +40,6 @@ export default function Body() {
         </p>
 
         <div className="header-btn font-neueEinstellung mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-          {/* Replace the href link with an onClick handler */}
           <button
             onClick={scrollToJoinUs}
             className="px-6 py-3 bg-[#FBA013] text-white  hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
@@ -175,7 +182,6 @@ export default function Body() {
         <Guarantee />
       </div>
 
-      {/* The target joinus section */}
       <div id="joinus" ref={joinUsRef}>
         <WaitlistForm />
       </div>
