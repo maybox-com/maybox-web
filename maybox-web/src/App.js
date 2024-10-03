@@ -12,7 +12,7 @@ import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgottenPassword';
 import LandingPage from './components/Landing/LandingPage';
 import { Analytics } from "@vercel/analytics/react"
-// import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="/dashboard" element={<Dashboard />} />
           {/* <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/signin" element={<SignIn />} />

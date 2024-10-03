@@ -8,7 +8,7 @@ const Dashboard = () => {
         <Navbar/>
       <Sidebar/>
       <main className='mt-9'>
-        <h2>Welcome, <span className='text-orange-700'>Joe👋</span></h2>
+        {/* <h2>Welcome, <span className='text-orange-700'>Joe👋</span></h2> */}
       </main>
     </div>
   )

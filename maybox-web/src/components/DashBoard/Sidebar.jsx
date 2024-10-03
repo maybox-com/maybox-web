@@ -1,37 +1,55 @@
 import React from 'react';
+import { RxDashboard } from "react-icons/rx";
 import { FaRegUser } from "react-icons/fa6";
 import { MdPayment, MdOutlineShoppingCart } from "react-icons/md";
-import { CiDeliveryTruck } from "react-icons/ci";
+import { CiDeliveryTruck, CiLogout } from "react-icons/ci";
 import { GoHistory } from "react-icons/go";
 
+
 const Sidebar = () => {
-  return (
-    <div className='bg-gray-50 w-64 p-4 absolute left-0 h-screen '>
-        <div className='mt-3'>
-        <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50">
-        <FaRegUser className="mr-2" />
+    return (
+        <div className="flex">
+            <aside
+                id="default-sidebar"
+                className="fixed mt-[0.01rem] left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 border-r-2 border-r-gray-400 "
+                aria-label="Sidebar"
+            >
+                <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 ">
+                <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50 text-lg ">
+        <RxDashboard className="mr-2 text-base text-gray-600" />
+        DashBoard
+      </a>
+                <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50 text-lg ">
+        <FaRegUser className="mr-2 text-base text-gray-600" />
         Personal Details
       </a>
-      <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50">
-        <MdPayment className="mr-2" />
+      <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50 text-lg ">
+        <MdPayment className="mr-2 text-base text-gray-600" />
         Subscription
       </a>
-      <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50">
-        <MdOutlineShoppingCart className="mr-2" />
+      <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50 text-lg ">
+        <MdOutlineShoppingCart className="mr-2 text-base text-gray-600" />
         Cart
       </a>
-      <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50">
-        <CiDeliveryTruck className="mr-2" />
+      <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50 text-lg ">
+        <CiDeliveryTruck className="mr-2 text-base text-gray-600" />
         Delivery
       </a>
-      <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50">
-        <GoHistory className="mr-2" />
+      <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50 text-lg ">
+        <GoHistory className="mr-2 text-base text-gray-600" />
         History
       </a>
+
+      <div className='mt-20'>
+      <a href="#" className="flex items-center p-2  hover:bg-gray-900 hover:text-gray-50 text-lg ">
+        <CiLogout className="mr-2 text-base text-red-900 " />
+        Logout
+      </a>
+      </div>
+                </div>
+            </aside>
         </div>
-    
-    </div>
-  );
-}
+    );
+};
 
 export default Sidebar;
