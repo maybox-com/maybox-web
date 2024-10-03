@@ -1,0 +1,16 @@
+/* Ensure the navbar stays at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50; /* Make sure it stays above other content */
+    background-color: #fff; /* Optional: Add a background to make it visible over content */
+}
+
+/* Push the sidebar down by the height of the navbar */
+.sidebar {
+    margin-top: 60px; /* Adjust this value based on the height of your navbar */
+    position: fixed;
+    height: calc(100vh - 60px); /* Adjust sidebar height to account for navbar */
+    z-index: 40;
+}
