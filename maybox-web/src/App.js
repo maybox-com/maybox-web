@@ -13,6 +13,8 @@ import ForgotPassword from './pages/ForgottenPassword';
 import LandingPage from './components/Landing/LandingPage';
 import { Analytics } from "@vercel/analytics/react"
 import Dashboard from './pages/Dashboard';
+import Dashboardpage from './components/DashBoard/Pages/Dashboardpage';
+import Personaldetails from './components/DashBoard/Pages/Personaldetails';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          {/* <Route path="/dashboardpage" element={<Dashboardpage />} />
+          <Route path="/personaldetails" element={<Personaldetails />} /> */}
           {/* <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/signin" element={<SignIn />} />
