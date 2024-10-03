@@ -5,20 +5,20 @@ const steps = [
     title: "Step 1",
     description: "Share your beauty goals",
     details: "Answer a few questions to help us match you with the right products for your skin, hair, and style.",
-    bgColor: "bg-customRed",
+    bgColor: "bg-[#FBA013]",
   },
   {
     title: "Step 2",
     description: "Choose your products",
     details: "Choose the products you want, or let us build a box that's tailored just for you.",
-    bgColor: "bg-customOrangeDark",
-    textColor:"text-[#f0f0f0;]"
+    bgColor: "bg-[#FCF5EB]",
   },
   {
     title: "Step 3",
     description: "Discover new beauty",
     details: "Try new products each month, find your favorites in our Shop, and be effortlessly you.",
-    bgColor: "bg-customOrangeLight",
+    bgColor: "bg-customOrangeDark",
+    textColor:"text-[#f0f0f0;]"
     
   }
 ];

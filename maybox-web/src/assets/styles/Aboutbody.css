@@ -1,5 +1,5 @@
 .sect1 {
-    background-image: url("https://www.birchbox.com/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fbirchbox%2Fa4a56ddc-afe0-4ac2-a360-f81c1165d634_pexels-rodnae-productions-4920883%2B1.png%3Fauto%3Dcompress%2Cformat%26rect%3D31%2C0%2C1378%2C640%26w%3D1400%26h%3D650&w=1920&q=75");
+    background-image: url("https://images.pexels.com/photos/5710307/pexels-photo-5710307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -48,7 +48,7 @@
 }
 
 .plans-btn:active {
-    background-color: "#ED6C30";
+    background-color: #ED6C30;
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
     transform: translateY(0);
 }

@@ -67,11 +67,10 @@ function Contactus() {
               
               <div className="flex items-center justify-between">
                 <button
-                  className="bg-customRed text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline flex items-center"
+                  className="bg-customOrangeDark text-white font-meduim py-2 px-4 rounded focus:outline-none focus:shadow-outline flex items-center"
                   type="button"
                 >
                   Send Message
-                  <FontAwesomeIcon icon={faArrowPointer} className="ml-2" />
                 </button>
               </div>
             </form>

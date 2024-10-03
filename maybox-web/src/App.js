@@ -9,20 +9,31 @@ import Lost from './pages/404';
 import './index.css';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
-
+import ForgotPassword from './pages/ForgottenPassword';
+import LandingPage from './components/Landing/LandingPage';
+import { Analytics } from "@vercel/analytics/react"
+import Dashboard from './pages/Dashboard';
+import Dashboardpage from './components/DashBoard/Pages/Dashboardpage';
+import Personaldetails from './components/DashBoard/Pages/Personaldetails';
 
 function App() {
   return (
     <div className='bg-img'>
       <div className="container mx-auto scroll-behavior: smooth;">
+        <Analytics />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          {/* <Route path="/dashboardpage" element={<Dashboardpage />} />
+          <Route path="/personaldetails" element={<Personaldetails />} /> */}
+          {/* <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/resetpassword" element={<ForgotPassword />} /> */}
           <Route path="*" element={<Lost />} />
+          {/* <Route path="/landing" element={<LandingPage />} /> */}
         </Routes>
       </div>
     </div>

@@ -9,7 +9,7 @@ const NavList = () => {
   ];
 
   return (
-    <ul className="flex flex-col text-[15px] p-4 md:p-0 mt-4 font-medium md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+    <ul className="flex flex-col z-10 text-[15px] p-4 md:p-0 mt-4 font-medium md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
       {navItems.map((item, index) => (
         <li key={index}>
           <a
