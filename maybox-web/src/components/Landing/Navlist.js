@@ -1,7 +1,7 @@
 
 const NavList = () => {
   const navItems = [
-    { href: "#joinus", label: "Join Us" },
+    { href: "/", label: "Join Us" },
     { href: "/about", label: "About" },
     { href: "/vendors", label: "Vendors" },
   ];
