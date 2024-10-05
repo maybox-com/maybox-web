@@ -11,8 +11,10 @@ import Faq from "../UI/Faq";
 
 export default function Body() {
   const joinUsRef = useRef(null);
+  const faqRef = useRef(null);
   const scrollToJoinUs = () => {
     joinUsRef.current.scrollIntoView({ behavior: "smooth" });
+
   };
 
   return (
@@ -179,7 +181,7 @@ export default function Body() {
         </div>
       </div>
 
-      <Faq />
+      <Faq  id="faq" ref={faqRef} />
       <div id="guarantee">
         <Guarantee />
       </div>

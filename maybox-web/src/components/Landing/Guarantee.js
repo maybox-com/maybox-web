@@ -54,7 +54,7 @@ export default function Guarantee() {
             </div>
           </li>
 
-          <li className="flex items-center">
+          {/* <li className="flex items-center">
             <img
               src={Flag}
               alt="Do"
@@ -66,7 +66,7 @@ export default function Guarantee() {
               <p className="font-semibold text-start">Ships Only to Port Harcourt (For Now)</p>
               <p className="text-gray-600 text-sm text-start">At the moment, Maybox ships exclusively to Port Harcourt. We’re working tirelessly to expand to more locations soon.</p>
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
