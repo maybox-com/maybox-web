@@ -67,7 +67,7 @@ const VendorForm = () => {
           At Maybox, we’re passionate about delivering curated beauty experiences. We’re always looking for exciting brands to collaborate with and bring more value to our customers.
         </p>
 
-         <form action="#" class="mt-8 grid grid-cols-6 gap-6">
+         <form onSubmit={handleSubmit} class="mt-8 grid grid-cols-6 gap-6">
   <div class="col-span-6">
     <label for="CompanyName" class="block text-sm font-medium text-gray-700">
       Company/Brand/Vendor Name (Required)
