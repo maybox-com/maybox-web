@@ -17,7 +17,7 @@ const Aboutbody = () => {
               href="/"
               className="px-6 py-3 bg-[#FBA013] text-white font-neueEinstellung hover:bg-[#E68A00] transition duration-300 inline-block sm:px-8 sm:py-4 w-full sm:w-auto text-center"
             >
-              Build Your Box
+              Join us today!
             </a>
           </div>
         </div>
