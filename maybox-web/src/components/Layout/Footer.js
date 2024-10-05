@@ -156,11 +156,11 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="/vendors"
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      Subscription Plans{" "}
+                      Apply to be a vendor{" "}
                     </a>
                   </li>
                 </ul>

@@ -7,6 +7,7 @@ import Hand from "../../assets/images/HAND.svg";
 import Guarantee from "./Guarantee";
 import WaitlistForm from "./Waitlist";
 import Steps from "../UI/Steps";
+import Faq from "../UI/Faq";
 
 export default function Body() {
   const joinUsRef = useRef(null);
@@ -178,6 +179,7 @@ export default function Body() {
         </div>
       </div>
 
+      <Faq />
       <div id="guarantee">
         <Guarantee />
       </div>
