@@ -23,7 +23,7 @@ const Sidebar = () => {
                         <FaRegUser className="mr-2 text-base text-gray-600" />
                         Personal Details
                     </Link>
-                    <Link to="/subscription" className="flex items-center p-2 hover:bg-gray-800 hover:text-gray-50 text-lg">
+                    <Link to="/subscriptionpage" className="flex items-center p-2 hover:bg-gray-800 hover:text-gray-50 text-lg">
                         <MdPayment className="mr-2 text-base text-gray-600" />
                         Subscription
                     </Link>
