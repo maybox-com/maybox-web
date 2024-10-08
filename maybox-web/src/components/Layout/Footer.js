@@ -127,7 +127,7 @@ function Footer() {
                 <ul class="mt-6 space-y-4 text-sm font-neueEinstellung">
                   <li>
                     <a
-                      href="#"
+                      href="mailto:info@themaybox.com"
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
