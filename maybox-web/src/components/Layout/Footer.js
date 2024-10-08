@@ -16,7 +16,7 @@ function Footer() {
                 Take your self-care routine to the next level with a box full of
                 beauty and wellness goodies, picked just for you. Get the latest
                 must-haves delivered straight to your door, designed to match
-                your vibe and keep you glowing."
+                your vibe and keep you glowing.
               </p>
 
               <ul class="mt-8 flex gap-6">
