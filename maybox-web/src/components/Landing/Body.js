@@ -88,8 +88,8 @@ export default function Body() {
     <img
       src="https://images.pexels.com/photos/15829509/pexels-photo-15829509/free-photo-of-portrait-of-a-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       alt="Look"
-      width={300}  // Reduced the width
-      height={250} // Reduced the height
+      width={300} 
+      height={250}
       className="border-2 border-black mb-4"
     />
     <LordIcon
@@ -106,8 +106,8 @@ export default function Body() {
     <img
       src="https://images.pexels.com/photos/6978068/pexels-photo-6978068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       alt="Care"
-      width={300}  // Reduced the width
-      height={250} // Reduced the height
+      width={300}  
+      height={250}
       className="border-2 border-black mb-4"
     />
     <DotLottieReact
