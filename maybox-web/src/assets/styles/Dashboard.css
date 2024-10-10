@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; /* Ensure full height */
+  }
+
+  .dashboard-layout {
+    display: flex; /* Use flexbox for layout */
+    height: calc(100vh - 60px); /* Adjust height based on navbar height */
+    /* Change 60px to the height of your Navbar */
+  }
+.edit1{
+width: 620px;
+}
+
+
+
+  .main-content {
+    flex: 1; /* Take up the remaining space */
+    padding: 20px; /* Add padding */
+    background-color: #fff; /* Example background color */
+margin-left: 20px;
+overflow-y: auto; /* Allows scrolling for the main content */
+position: relative;
+  }
+/* Optional: Adjust scrollbar styles for better visibility */
+.main-content::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+position: relative;
+right: 40px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background-color: #FBA013; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+
+  .container {
+    /* Additional styles for the container can be added here */
+  }
+span{
+color: #FBA013;
+}
+
+.width{
+width: 100px;
+}
+
+@media (max-width: 640px) {
+  .main-content {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .container {
+    padding: 0; /* Remove padding for small screens */
+  }
+
+  /* Adjust text sizes if necessary */
+  h1 {
+    font-size: 1.5rem; /* Smaller title on mobile */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* Smaller subtitle on mobile */
+  }
+}
+/* Dashboard.css */
+
+/* Ensure the main content starts after the sidebar */
+.dashboard-layout {
+  display: flex;
+}
+
+/* Main content area */
+main {
+  margin-left: 16rem; /* Adjust this value based on your sidebar width */
+  transition: margin-left 0.3s; /* Smooth transition */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    margin-left: 0; /* Reset margin on mobile */
+  }
+}

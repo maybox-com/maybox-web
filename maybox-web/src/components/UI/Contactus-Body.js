@@ -9,11 +9,12 @@ import { faArrowPointer } from "@fortawesome/free-solid-svg-icons"; // Import th
 function Contactus() {
   return (
     <>
-      <div className="container mx-auto mt-20 p-4">
+      <div className="container mx-auto mt-20 p-10">
         <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <h2 className="font-serif font-medium text-xl contactus mb-4">Contact Us</h2>
-            <p className="font-sans font-light mb-6">Reach out to us and tell us more about the package you want.</p>
+            <h2 className="font-serif font-medium text-xl contactus mb-4">Let's talk</h2>
+            <h2 className="italic font-medium text-xl contactus mb-4 pb-5">business</h2>
+            <p className="font-sans font-light mb-6">From conception to completion, <span className="font-medium font-serif">Maybox</span> works <br></br> shoulder to shoulder with our clients ensuring <br></br> that their vision and goals are achieved.</p>
             
             {/* Form Section */}
             <form className="space-y-4">
