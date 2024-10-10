@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Typewriter from "typewriter-effect"; // Import the Typewriter component
 import LordIcon from "./LordIcon";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Tag from "../../assets/images/TAG.svg";
 import Check from "../../assets/images/CALENDER.svg";
 import Hand from "../../assets/images/HAND.svg";
@@ -64,56 +65,65 @@ export default function Body() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-16">
-          <div className="flex flex-col items-center">
-            <img
-              src="https://images.pexels.com/photos/3736281/pexels-photo-3736281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=11"
-              alt="Feel"
-              width={350}
-              height={300}
-              className="border-2 border-black mb-4"
-            />
-            <LordIcon src="https://cdn.lordicon.com/jjoolpwc.json" />
-            <h3 className="text-xl font-bold mt-4 text-black">FEEL</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Let us help you <span className="font-bold">feel</span> glamorous
-              and beautiful.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 mb-8 md:grid-cols-3 gap-8 px-4 md:px-16">
+  <div className="flex flex-col items-center">
+    <img
+      src="https://images.pexels.com/photos/3736281/pexels-photo-3736281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=11"
+      alt="Feel"
+      width={300}  // Reduced the width
+      height={250} // Reduced the height
+      className="border-2 border-black mb-4"
+    />
+    <LordIcon
+      src="https://cdn.lordicon.com/jjoolpwc.json"
+      className="w-20 h-20"
+    />
+    <h3 className="text-xl font-bold mt-4 text-black">FEEL</h3>
+    <p className="text-gray-600 mt-2 text-center">
+      Let us help you <span className="font-bold">feel</span> glamorous and beautiful.
+    </p>
+  </div>
 
-          <div className="flex flex-col items-center">
-            <img
-              src="https://images.pexels.com/photos/15829509/pexels-photo-15829509/free-photo-of-portrait-of-a-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Look"
-              width={350}
-              height={300}
-              className="border-2 border-black mb-4"
-            />
-            <LordIcon src="https://cdn.lordicon.com/zpwnkfbk.json" />
-            <h3 className="text-xl font-bold mt-4 text-black">LOOK</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Let us help you <span className="font-bold">look</span> bold with
-              a natural glow.
-            </p>
-          </div>
+  <div className="flex flex-col items-center">
+    <img
+      src="https://images.pexels.com/photos/15829509/pexels-photo-15829509/free-photo-of-portrait-of-a-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="Look"
+      width={300}  // Reduced the width
+      height={250} // Reduced the height
+      className="border-2 border-black mb-4"
+    />
+    <LordIcon
+      src="https://cdn.lordicon.com/zpwnkfbk.json"
+      className="w-20 h-20"
+    />
+    <h3 className="text-xl font-bold mt-4 text-black">LOOK</h3>
+    <p className="text-gray-600 mt-2 text-center">
+      Let us help you <span className="font-bold">look</span> bold with a natural glow.
+    </p>
+  </div>
 
-          <div className="flex flex-col items-center">
-            <img
-              src="https://images.pexels.com/photos/6978068/pexels-photo-6978068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Do"
-              width={350}
-              height={300}
-              className="border-2 border-black mb-4"
-            />
-            <LordIcon src="https://cdn.lordicon.com/jyrzvbtn.json" />
-            <h3 className="text-xl font-bold mt-4 text-black">DO</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Let us help inspire you to <span className="font-bold">do</span>{" "}
-              good work.
-            </p>
-          </div>
-        </div>
-      </div>
+  <div className="flex flex-col items-center">
+    <img
+      src="https://images.pexels.com/photos/6978068/pexels-photo-6978068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="Care"
+      width={300}  // Reduced the width
+      height={250} // Reduced the height
+      className="border-2 border-black mb-4"
+    />
+    <DotLottieReact
+      src="https://lottie.host/0e8ba1a7-5d0b-4466-ab55-31354f50cd28/VkfZ1p75qC.json"
+      className="w-20 h-20"
+      loop
+      autoplay
+    />
+    <h3 className="text-xl font-bold mt-4 text-black">CARE</h3>
+    <p className="text-gray-600 mt-2 text-center">
+      Let us help you care for <span className="font-bold">yourself</span> every day.
+    </p>
+  </div>
+</div>
+
+
 
       <Steps />
 
@@ -181,7 +191,7 @@ export default function Body() {
         </div>
       </div>
 
-      <Faq  id="faq" ref={faqRef} />
+      <Faq id="faq" ref={faqRef} />
       <div id="guarantee">
         <Guarantee />
       </div>
@@ -189,6 +199,7 @@ export default function Body() {
       <div id="joinus" ref={joinUsRef}>
         <WaitlistForm />
       </div>
+    </div>
     </div>
   );
 }
