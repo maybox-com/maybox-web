@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box; /* Ensure consistent box model */
+ }
+
+ body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+ }
+
+ .navbar {
+    width: 100vw; /* Full width */
+    margin-left: calc(-50vw + 50%); /* Center the navbar *
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space items */
+    align-items: center; /* Center items vertically */
+    padding: 1rem; /* Padding */
+ }
