@@ -1,50 +1,17 @@
 #default-sidebar{
 position: fixed;
 overflow-y: hidden;
-background-color: white; /* Set the background color to white */
-/* Other existing styles */
-border-right: 2px solid gray; /* Example border style */
+background-color: white;
+border-right: 2px solid gray; 
+width: 16rem;
+transform: translateX(-100%); /* Initial hidden state */
+transition: transform 0.3s ease-in-out; /* Smooth sliding */
 }
   /* Add a media query for mobile view if necessary */
   @media (min-width: 768px) {
     #default-sidebar {
       position: static; /* Make sidebar static for desktop view */
     }
-  }
-/* Sidebar.css */
-#default-sidebar {
-    width: 16rem; /* Match this with the margin-left in the main content */
-    background-color: white;
-  }
-
-  /* Media query to hide sidebar on mobile */
-  @media (max-width: 768px) {
-    #default-sidebar {
-      display: none; /* Hide the sidebar on mobile */
-    }
-  }
-  #default-sidebar {
-    background-color: white;
-    width: 16rem; /* Set the width for desktop */
-  }
-
-  /* Media query to hide sidebar on mobile */
-  @media (max-width: 768px) {
-    #default-sidebar {
-      display: block; /* Ensure it can be toggled */
-    }
-  }
-
-/* Media query to hide sidebar on mobile */
-@media (max-width: 768px) {
-    #default-sidebar {
-      display: none; /* Hide the sidebar on mobile */
-    }
-  }
-
-  #default-sidebar {
-    transform: translateX(-100%); /* Initial hidden state */
-    transition: transform 0.3s ease-in-out; /* Smooth sliding */
   }
 
   #default-sidebar.translate-x-0 {

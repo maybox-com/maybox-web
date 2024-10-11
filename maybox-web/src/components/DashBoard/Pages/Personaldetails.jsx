@@ -7,8 +7,6 @@ import { MdAttachEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
 
-import "/Uc's files/Files/maybox-web-main/maybox-web/maybox-web/src/assets/styles/Personaldetails.css";
-
 const Personaldetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [newName, setNewName] = useState('');
@@ -32,54 +30,78 @@ const Personaldetails = () => {
     toggleModal(); // Close modal after submission
   };
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+
   return (
     <div>
-      <Navbar />
-      <Sidebar />
-      <main className="main-content">
-        <div className="container pt-5">
+      <Navbar toggleSidebar={toggleSidebar}/>
+      <div>
+      <Sidebar isOpen={isSidebarOpen} />
+        <main>
+        <div className="container lg:-mt-[52rem] sm:-mt-[0rem]">
           <h1 className='font-semibold text-gray-900'>
             <span className='text-gray-500 font-light'>Dashboard </span>/ Personal Details
           </h1>
           <div className='w-full bg-gray-600 h-1 mt-5 rounded-xl'></div>
           <h3 className='font-semibold font-sans tracking-wide pt-10 text-gray-900 text-xl'>Personal Information</h3>
-          <div className='flex flex-wrap justify-between pt-10'>
-            <div className='w-full sm:w-1/2 pr-2'>
-              <label className='text-gray-800'>Full Name:</label>
-              <div style={{ backgroundColor: '#FFF6E7' }} className="flex items-center p-3 mt-2 edit bg-FFA212 w-96 font-medium text-gray-700 text-sm rounded-xl">
-                <FaRegCircleUser className="mr-2 mb-1 text-base text-gray-900" />
-                Nwamadi David Zamani
-              </div>
-            </div>
-            <div className='w-full sm:w-1/2 pl-2'>
-              <label className='text-gray-700'>Email:</label>
-              <div style={{ backgroundColor: '#FFF6E7' }} className="flex p-3 mt-2 edit bg-FFA212 w-96 font-medium text-gray-700 text-sm rounded-xl">
-                <MdAttachEmail className="mr-2 pt-1 text-base text-gray-900"/>
-                zamaninwamadidavid@gmail.com
-              </div>
-            </div>
-            <div className='w-full mt-5 sm:w-1/2 pr-2'>
-              <label className='text-gray-800'>Mobile Number:</label>
-              <div style={{ backgroundColor: '#FFF6E7' }} className="flex p-3 mt-2 edit bg-FFA212 w-96 font-medium text-gray-700 text-sm rounded-xl">
-                <FaSquarePhone className="mr-2 pt-1 text-base text-gray-900"/>
-                +234 506 507 8902
-              </div>
-            </div>
-            <div className='w-full pt-5 sm:w-1/2 pl-2'>
-              <label className='text-gray-700'>Address:</label>
-              <div style={{ backgroundColor: '#FFF6E7' }} className="flex p-3 mt-2 edit bg-FFA212 w-96 font-medium text-gray-700 text-sm rounded-xl">
-                <IoLocation className="mr-2 pt-1 text-base text-gray-900"/>
-                123 Street Name, City, Country
-              </div>
-            </div>
+          <div className='flex flex-wrap justify-between pt-10 '>
 
-            <div className='mt-10 text-sm underline flex cursor-pointer' onClick={toggleModal}>
+  <div className='w-full sm:w-1/2 pr-2'>
+    <label className='text-gray-800'>Full Name:</label>
+    <div
+      className="relative flex items-center p-3 mt-2 w-full font-medium text-gray-700 text-sm rounded-xl bg-[#FFF6E7] "
+    >
+      <FaRegCircleUser className="absolute left-3 text-base text-gray-900" />
+      <input type="text" className="bg-[#FFF6E7] pl-10 py-2 w-full rounded-xl border-none focus:outline-none focus:ring-0" placeholder="Full Name"  />
+    </div>
+  </div>
+
+
+  <div className='w-full sm:w-1/2 pl-2'>
+    <label className='text-gray-700'>Email:</label>
+    <div
+      className="relative flex items-center p-3 mt-2 w-full font-medium text-gray-700 text-sm rounded-xl bg-[#FFF6E7] "
+    >
+      <MdAttachEmail className="absolute left-3 text-base text-gray-900" />
+      <input type="email" className="bg-[#FFF6E7] pl-10 py-2 w-full rounded-xl border-none focus:outline-none focus:ring-0" placeholder="Email" />
+    </div>
+  </div>
+
+ 
+  <div className='w-full mt-5 sm:w-1/2 pr-2'>
+    <label className='text-gray-800'>Mobile Number:</label>
+    <div
+      className="relative flex items-center p-3 mt-2 w-full font-medium text-gray-700 text-sm rounded-xl bg-[#FFF6E7] "
+    >
+      <FaSquarePhone className="absolute left-3 text-base text-gray-900" />
+      <input type="tel" className="bg-[#FFF6E7] pl-10 py-2 w-full rounded-xl border-none focus:outline-none focus:ring-0" placeholder="Mobile Number"  />
+    </div>
+  </div>
+
+  <div className='w-full pt-5 sm:w-1/2 pl-2 sm:pl-0'>
+    <label className='text-gray-700'>Address:</label>
+    <div
+      className="relative flex items-center p-3 mt-2 w-full font-medium text-gray-700 text-sm rounded-xl bg-[#FFF6E7] "
+    >
+      <IoLocation className="absolute left-3 text-base text-gray-900" />
+      <input type="text" id="address" name="address" autocomplete="street-address" className="bg-[#FFF6E7] pl-10 py-2 w-full rounded-xl border-none focus:outline-none focus:ring-0" placeholder="Address"/>
+    </div>
+  </div>
+
+  <div className='mt-10 text-sm underline flex cursor-pointer' onClick={toggleModal}>
               Update / Edit Personal details
               <FaRegEdit className='ml-1 mt-1' />
             </div>
-          </div>
+</div>
         </div>
       </main>
+      </div>
+      
 
       {/* Update Personal Details Modal */}
       {isModalOpen && (

@@ -10,43 +10,48 @@ const Deliverypage = () => {
     setIsModalOpen(!isModalOpen);
   };
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div>
-      <Navbar />
-      <Sidebar />
-      <main className='mt-12 main-content'>
+        <Navbar toggleSidebar={toggleSidebar}/>
+        <div>
+        <Sidebar isOpen={isSidebarOpen} />
+
+        <main className='main-content lg:-mt-[54rem] sm:-mt-[0rem]'>
         <h1 className='font-semibold text-gray-900'>
           <span className='text-gray-500 font-light'>Dashboard </span>/ Delivery Details
         </h1>
         <div className='w-full bg-gray-600 h-1 mt-5 rounded-xl'></div>
         <div className='mt-24'>
-          <h3 className='text-2xl font-semibold'>Delivery Details</h3>
+              <h3 className='text-2xl font-semibold'>Delivery Details</h3>
+              <div className="flex justify-between mt-8 bg-orange-50 px-3 py-2 rounded-md">
+                <div><CiDeliveryTruck className='text-[#22D031] text-2xl' /></div>
+                <div>ID:</div>
+                <div className='text-sm'>asfadyweewrwwfrwwfwf</div>
+                <div className='text-sm'>Date:</div>
+                <div className='text-sm'>14/01/2023</div>
+                <div className='text-sm'>to</div>
+                <div className='text-sm'>20/04/2034</div>
+              </div>
 
-          {/* Delivery Item 1 */}
-          <div className="flex justify-between mt-8 bg-orange-50 px-3 py-2 rounded-md">
-            <div><CiDeliveryTruck className='text-[#22D031] text-2xl' /></div>
-            <div className=''>ID:</div>
-            <div className='-ml-[8rem] text-sm'>asfadyweewrwwfrwwfwf</div>
-            <div className='-ml-[8rem] text-sm mt-1'>Date:</div>
-            <div className='-ml-[8rem] text-sm mt-1'>14/01/2023</div>
-            <div className='-ml-[8rem] text-sm mt-1'>to</div>
-            <div className='-ml-[8rem] text-sm mt-1'>20/04/2034</div>
-            <button onClick={toggleModal} className='ml-44 text-[#FBA013]'>Details</button>
-          </div>
-
-          {/* Delivery Item 2 */}
-          <div className="flex justify-between mt-8 bg-orange-50 px-3 py-2 rounded-md">
-            <div><CiDeliveryTruck className='text-red-500 text-2xl' /></div>
-            <div className=''>ID:</div>
-            <div className='-ml-[8rem] text-sm'>asfadyweewrwwfrwwfwf</div>
-            <div className='-ml-[8rem] text-sm mt-1'>Date:</div>
-            <div className='-ml-[8rem] text-sm mt-1'>14/01/2023</div>
-            <div className='-ml-[8rem] text-sm mt-1'>to</div>
-            <div className='-ml-[8rem] text-sm mt-1'>20/04/2034</div>
-            <button onClick={toggleModal} className='ml-44 text-[#FBA013]'>Details</button>
-          </div>
-        </div>
+              <div className="flex justify-between mt-8 bg-orange-50 px-3 py-2 rounded-md">
+                <div><CiDeliveryTruck className='text-red-500 text-2xl' /></div>
+                <div>ID:</div>
+                <div className='text-sm'>asfadyweewrwwfrwwfwf</div>
+                <div className='text-sm'>Date:</div>
+                <div className='text-sm'>14/01/2023</div>
+                <div className='text-sm'>to</div>
+                <div className='text-sm'>20/04/2034</div>
+              </div>
+            </div>
       </main>
+        </div>
+   
 
       {/* Delivery Modal */}
       {isModalOpen && (

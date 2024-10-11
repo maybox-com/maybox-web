@@ -1,7 +1,7 @@
 import { IoIosNotifications } from "react-icons/io";
 import { FaLocationArrow } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
-import "/Uc's files/Files/maybox-web-main/maybox-web/maybox-web/src/assets/styles/Dashboard-Nav.css";
+import "../../assets/styles/Dashboard-Nav.css"
 
 const Navbar = ({ toggleSidebar }) => {
   return (
@@ -10,7 +10,7 @@ const Navbar = ({ toggleSidebar }) => {
       <button
         onClick={toggleSidebar}
         type="button"
-        className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 sm:hidden"
+        className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden"
       >
         <span className="sr-only">Open sidebar</span>
         <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">

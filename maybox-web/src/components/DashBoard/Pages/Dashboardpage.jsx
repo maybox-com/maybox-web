@@ -8,7 +8,7 @@ import { IoLocation } from "react-icons/io5";
 import { GoDotFill } from "react-icons/go";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
-import "/Uc's files/Files/maybox-web-main/maybox-web/maybox-web/src/assets/styles/Dashboard.css";
+import "../../../assets/styles/Dashboard.css";
 
 const Dashboardpage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -18,12 +18,12 @@ const Dashboardpage = () => {
   };
 
   return (
-    <div>
-      <Navbar toggleSidebar={toggleSidebar} />
+    <div className='sm:-ml-[0.62rem]'>
+      <Navbar toggleSidebar={toggleSidebar}/>
       <div className="dashboard-layout">
         <Sidebar isOpen={isSidebarOpen} />
-        <main className="main-content">
-          <div className="container">
+        <main className="main-content ">
+          <div className="container mx-auto">
             <h1 className='font-semibold text-gray-900'>
               <span className='text-gray-500 font-light'>Dashboard </span>/ Overview
             </h1>
@@ -32,46 +32,62 @@ const Dashboardpage = () => {
 
             <h3 className='font-semibold font-sans tracking-wide pt-10 text-gray-900 text-xl flex justify-between items-center'>
               Personal Information
-              <div className='width flex text-gray-800 font-normal text-sm border p-2 mr-20 rounded-xl'>
+              <div className='flex items-center text-gray-800 font-normal text-sm border p-2 rounded-xl'>
                 <SlCalender className="mr-2 text-base text-gray-900" />
                 Oct 7
               </div>
             </h3>
+            <div className='flex flex-wrap justify-between pt-10 '>
 
-            <div className='flex flex-wrap justify-between pt-10'>
-              <div className='w-full sm:w-1/2 pr-2'>
-                <label className='text-gray-800'>Full Name:</label>
-                <div style={{ backgroundColor: '#FFF6E7' }} className="flex items-center p-3 mt-2 edit bg-FFA212 w-96 font-medium text-gray-700 text-sm rounded-xl">
-                  <FaRegCircleUser className="mr-2 mb-1 text-base text-gray-900" />
-                  Nwamadi David Zamani
-                </div>
-              </div>
-              <div className='w-full sm:w-1/2 pl-2'>
-                <label className='text-gray-700'>Email:</label>
-                <div style={{ backgroundColor: '#FFF6E7' }} className="flex p-3 mt-2 edit bg-FFA212 w-96 font-medium text-gray-700 text-sm rounded-xl">
-                  <MdAttachEmail className="mr-2 pt-1 text-base text-gray-900" />
-                  zamaninwamadidavid@gmail.com
-                </div>
-              </div>
-              <div className='w-full mt-5 sm:w-1/2 pr-2'>
-                <label className='text-gray-800'>Mobile Number:</label>
-                <div style={{ backgroundColor: '#FFF6E7' }} className="flex p-3 mt-2 edit bg-FFA212 w-96 font-medium text-gray-700 text-sm rounded-xl">
-                  <FaSquarePhone className="mr-2 pt-1 text-base text-gray-900" />
-                  +234 506 507 8902
-                </div>
-              </div>
-              <div className='w-full pt-5 sm:w-1/2 pl-2'>
-                <label className='text-gray-700'>Address:</label>
-                <div style={{ backgroundColor: '#FFF6E7' }} className="flex p-3 mt-2 edit bg-FFA212 w-96 font-medium text-gray-700 text-sm rounded-xl">
-                  <IoLocation className="mr-2 pt-1 text-base text-gray-900" />
-                  123 Street Name, City, Country
-                </div>
-              </div>
-            </div>
+  <div className='w-full sm:w-1/2 pr-2'>
+    <label className='text-gray-800'>Full Name:</label>
+    <div
+      className="relative flex items-center p-3 mt-2 w-full font-medium text-gray-700 text-sm rounded-xl bg-[#FFF6E7] "
+    >
+      <FaRegCircleUser className="absolute left-3 text-base text-gray-900" />
+      <input type="text" className="bg-[#FFF6E7] pl-10 py-2 w-full rounded-xl border-none focus:outline-none focus:ring-0" placeholder="Full Name"  />
+    </div>
+  </div>
 
-            <div className='mt-16'>
+
+  <div className='w-full sm:w-1/2 pl-2'>
+    <label className='text-gray-700'>Email:</label>
+    <div
+      className="relative flex items-center p-3 mt-2 w-full font-medium text-gray-700 text-sm rounded-xl bg-[#FFF6E7] "
+    >
+      <MdAttachEmail className="absolute left-3 text-base text-gray-900" />
+      <input type="email" className="bg-[#FFF6E7] pl-10 py-2 w-full rounded-xl border-none focus:outline-none focus:ring-0" placeholder="Email" />
+    </div>
+  </div>
+
+ 
+  <div className='w-full mt-5 sm:w-1/2 pr-2'>
+    <label className='text-gray-800'>Mobile Number:</label>
+    <div
+      className="relative flex items-center p-3 mt-2 w-full font-medium text-gray-700 text-sm rounded-xl bg-[#FFF6E7] "
+    >
+      <FaSquarePhone className="absolute left-3 text-base text-gray-900" />
+      <input type="tel" className="bg-[#FFF6E7] pl-10 py-2 w-full rounded-xl border-none focus:outline-none focus:ring-0" placeholder="Mobile Number"  />
+    </div>
+  </div>
+
+  <div className='w-full pt-5 sm:w-1/2 pl-2 sm:pl-0'>
+    <label className='text-gray-700'>Address:</label>
+    <div
+      className="relative flex items-center p-3 mt-2 w-full font-medium text-gray-700 text-sm rounded-xl bg-[#FFF6E7] "
+    >
+      <IoLocation className="absolute left-3 text-base text-gray-900" />
+      <input type="text" id="address" name="address" autocomplete="street-address" className="bg-[#FFF6E7] pl-10 py-2 w-full rounded-xl border-none focus:outline-none focus:ring-0" placeholder="Address"/>
+    </div>
+  </div>
+</div>
+
+
+
+
+            <div className='mt-16 '>
               <h3 className='text-2xl font-semibold'>Subscription Status</h3>
-              <div className="edit1 mt-10 border p-5 border-2 border-gray-700 rounded-xl w-full">
+              <div className="w-3/5 mt-10 border-2 p-5 border-gray-700 rounded-xl ">
                 <p className='text-xl text-[#FBA013] font-semibold'>Standard</p>
                 <p className="flex font-semibold mt-1" style={{ fontSize: '0.5rem' }}>
                   Active Subscription <GoDotFill className='text-[#22D031]' />
@@ -86,21 +102,21 @@ const Dashboardpage = () => {
               <div className="flex justify-between mt-8 bg-orange-50 px-3 py-2 rounded-md">
                 <div><CiDeliveryTruck className='text-[#22D031] text-2xl' /></div>
                 <div>ID:</div>
-                <div className='-ml-[8rem] mt-1 text-sm'>asfadyweewrwwfrwwfwf</div>
-                <div className='-ml-[8rem] text-sm mt-1'>Date:</div>
-                <div className='-ml-[8rem] text-sm mt-1'>14/01/2023</div>
-                <div className='-ml-[8rem] text-sm mt-1'>to</div>
-                <div className='-ml-[8rem] text-sm mt-1'>20/04/2034</div>
+                <div className='text-sm'>asfadyweewrwwfrwwfwf</div>
+                <div className='text-sm'>Date:</div>
+                <div className='text-sm'>14/01/2023</div>
+                <div className='text-sm'>to</div>
+                <div className='text-sm'>20/04/2034</div>
               </div>
 
               <div className="flex justify-between mt-8 bg-orange-50 px-3 py-2 rounded-md">
                 <div><CiDeliveryTruck className='text-red-500 text-2xl' /></div>
                 <div>ID:</div>
-                <div className='-ml-[8rem] mt-1 text-sm'>asfadyweewrwwfrwwfwf</div>
-                <div className='-ml-[8rem] text-sm mt-1'>Date:</div>
-                <div className='-ml-[8rem] text-sm mt-1'>14/01/2023</div>
-                <div className='-ml-[8rem] text-sm mt-1'>to</div>
-                <div className='-ml-[8rem] text-sm mt-1'>20/04/2034</div>
+                <div className='text-sm'>asfadyweewrwwfrwwfwf</div>
+                <div className='text-sm'>Date:</div>
+                <div className='text-sm'>14/01/2023</div>
+                <div className='text-sm'>to</div>
+                <div className='text-sm'>20/04/2034</div>
               </div>
             </div>
 

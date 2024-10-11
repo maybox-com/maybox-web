@@ -9,7 +9,7 @@
  }
 
  .navbar {
-    width: 100vw; /* Full width */
+    width: 99.56vw; /* Full width */
     margin-left: calc(-50vw + 50%); /* Center the navbar *
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space items */
