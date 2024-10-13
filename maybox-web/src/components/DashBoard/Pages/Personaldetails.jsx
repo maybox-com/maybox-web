@@ -43,7 +43,7 @@ const Personaldetails = () => {
       <div>
       <Sidebar isOpen={isSidebarOpen} />
         <main>
-        <div className="container lg:-mt-[52rem] sm:-mt-[0rem]">
+        <div className="container lg:-mt-[52rem] md:-mt-[100rem] sm:-mt-[0rem]">
           <h1 className='font-semibold text-gray-900'>
             <span className='text-gray-500 font-light'>Dashboard </span>/ Personal Details
           </h1>

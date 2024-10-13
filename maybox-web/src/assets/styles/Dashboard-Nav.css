@@ -10,9 +10,18 @@
 
  .navbar {
     width: 99.56vw; /* Full width */
-    margin-left: calc(-50vw + 50%); /* Center the navbar *
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Space items */
-    align-items: center; /* Center items vertically */
-    padding: 1rem; /* Padding */
+    margin-left: calc(-50vw + 50%); /* Center the navbar */
+ }
+
+
+ @media (max-width: 640px) {
+   .maybox {
+   display: none;
+   }
+ }
+
+ @media (max-width: 768px) {
+   .maybox {
+   display: none;
+   }
  }

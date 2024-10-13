@@ -51,22 +51,52 @@ width: 100px;
 
 @media (max-width: 640px) {
   .main-content {
-    padding: 1rem; /* Reduce padding on smaller screens */
+    padding: 1rem;
   }
 
   .container {
-    padding: 0; /* Remove padding for small screens */
+    padding: 0;
   }
 
-  /* Adjust text sizes if necessary */
   h1 {
-    font-size: 1.5rem; /* Smaller title on mobile */
+    font-size: 1.5rem;
   }
 
   h3 {
-    font-size: 1.25rem; /* Smaller subtitle on mobile */
+    font-size: 1.25rem;
+  }
+
+  .beauty {
+    display: none;
+  }
+
+  .maybox {
+    margin-left: -15rem;
+  }
+
+  .delivery {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for small screens */
+    gap: 0.5rem; /* Add spacing between grid items */
+    align-items: center; /* Ensure vertical alignment */
+  }
+
+  .truck {
+    display: none; /* Keep hidden on small screens */
   }
 }
+
+@media (min-width: 641px) {
+  .delivery {
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    gap: 1rem; /* Increase spacing for larger screens */
+  }
+
+  .truck {
+    display: block; /* Show truck icon on larger screens */
+  }
+}
+
 
 
 /* Main content area */

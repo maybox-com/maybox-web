@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen }) => {
       } lg:translate-x-0 border-r-2 border-r-gray-600 rounded-xl`}
       aria-label="Sidebar"
     >
-      <div className="h-full px-3 py-4 pt-5 overflow-y-auto">
+      <div className="h-full px-3 py-4 pt-5 overflow-y-auto font-playtip">
         <Link to="/dashboardpage" className="flex items-center border-gray-700 border hover:text-black hover:font-medium rounded-md ite p-2 text-gray-700 text-sm">
           <RxDashboard className="mr-2 text-base text-gray-900" />
           Dashboard
