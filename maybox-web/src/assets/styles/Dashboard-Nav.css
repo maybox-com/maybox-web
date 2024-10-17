@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box; /* Ensure consistent box model */
+ }
+
+ body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+ }
+
+ .navbar {
+    width: 99.56vw; /* Full width */
+    margin-left: calc(-50vw + 50%); /* Center the navbar */
+ }
+
+
+ @media (max-width: 640px) {
+   .maybox {
+   display: none;
+   }
+ }
+
+ @media (max-width: 768px) {
+   .maybox {
+   display: none;
+   }
+ }

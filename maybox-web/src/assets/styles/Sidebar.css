@@ -1,0 +1,28 @@
+#default-sidebar{
+position: fixed;
+overflow-y: hidden;
+background-color: white;
+border-right: 2px solid gray; 
+width: 16rem;
+transform: translateX(-100%); /* Initial hidden state */
+transition: transform 0.3s ease-in-out; /* Smooth sliding */
+}
+  /* Add a media query for mobile view if necessary */
+  @media (min-width: 768px) {
+    #default-sidebar {
+      position: static; /* Make sidebar static for desktop view */
+    }
+  }
+
+  #default-sidebar.translate-x-0 {
+    transform: translateX(0); /* Slide-in when open */
+  }
+
+  #default-sidebar.translate-x-full {
+    transform: translateX(-100%); /* Slide-out when closed */
+  }
+
+  .bg-opacity-50 {
+    background-color: rgba(0, 0, 0, 0.5); /* Background dim when sidebar is open */
+  }
+

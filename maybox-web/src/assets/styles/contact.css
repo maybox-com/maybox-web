@@ -11,6 +11,10 @@
 body {
     overflow-x: hidden;
 }
+.contactus{
+    font-size: 50px;
+    padding-top: 15px;
+}
 
 .message {
     width: 400px;

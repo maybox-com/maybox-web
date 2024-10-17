@@ -4,8 +4,9 @@ import Sidebar from '../components/DashBoard/Sidebar'
 import Navbar from '../components/DashBoard/Navbar'
 import Dashboardpage from '../components/DashBoard/Pages/Dashboardpage'
 import Personaldetails from '../components/DashBoard/Pages/Personaldetails'
-import Delivery from '../components/DashBoard/Pages/Delivery'
+import '../assets/styles/Dashboard.css'
 import Subscriptionpage from '../components/DashBoard/Pages/Subscriptionpage'
+import Deliverypage from '../components/DashBoard/Pages/Deliverypage'
 
 const Dashboard = () => {
   return (
@@ -16,10 +17,10 @@ const Dashboard = () => {
         <Routes>
           <Route path="/dashboardpage" element={<Dashboardpage />} />
           <Route path="/personaldetails" element={<Personaldetails />} />
-          <Route path="/delivery" element={<Delivery />} />
-          <Route path="/delivery" element={<Delivery />} />
-          <Route path="/subscriptionpage" element={<Subscriptionpage />} />
-        </Routes>
+
+          <Route path="/subsciptionpage" element={<Subscriptionpage />} />
+          <Route path="/deliverypage" element={<Deliverypage />} />
+          </Routes>
       </main>
     </div>
   )
