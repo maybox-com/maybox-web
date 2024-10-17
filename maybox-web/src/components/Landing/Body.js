@@ -70,8 +70,8 @@ export default function Body() {
     <img
       src="https://images.pexels.com/photos/3736281/pexels-photo-3736281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=11"
       alt="Feel"
-      width={300}  // Reduced the width
-      height={250} // Reduced the height
+      width={300}  
+      height={250} 
       className="border-2 border-black mb-4"
     />
     <LordIcon
