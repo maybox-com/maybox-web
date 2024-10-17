@@ -46,7 +46,7 @@ function Footer() {
 
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/shopmaybox/"
                     rel="noreferrer"
                     target="_blank"
                     class="text-gray-700 transition hover:opacity-75"
