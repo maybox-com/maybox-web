@@ -1,19 +1,19 @@
 import React from "react";
-import GuaranteeImage from "../../assets/images/guarantee-woman.png";
 import Haze from "../../assets/images/haze.png";
 import Clapping from "../../assets/images/clapping.png";
 import Flag from "../../assets/images/flag.png";
+import GuaranteeImage from "../../assets/images/guarantee.jpg";
 
 export default function Guarantee() {
   return (
-    <div className="flex flex-col font-neueEinstellung lg:flex-row items-center justify-between mt-20 px-4 lg:px-16">
+    <div className="pb-20 flex flex-col font-neueEinstellung lg:flex-row items-center justify-between mt-20 px-4 lg:px-16">
       <div className="flex-shrink-0">
         <img
-        className="border-2 border-black"
-          src="https://images.pexels.com/photos/6977992/pexels-photo-6977992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=11"
+          className=" border rounded-md"
+          src={GuaranteeImage}
           alt="Woman smiling with skincare"
-           width={350}
-           height={250}
+          width={550}
+          height={50}
         />
       </div>
 
@@ -35,7 +35,8 @@ export default function Guarantee() {
             />
             <div>
               <p className=" text-start font-semibold">Try Maybox Risk-Free</p>
-              <p className="text-gray-600 text-start text-sm">We’ve got your back with easy returns</p>
+              <p className="text-gray-600 text-start text-sm">Experience Maybox with confidence. If you don’t love your first box, we’ll make it right—guaranteed.
+</p>
             </div>
           </li>
 
@@ -48,8 +49,8 @@ export default function Guarantee() {
               height={35}
             />
             <div>
-              <p className="font-semibold text-start">No Fuzzy Haze</p>
-              <p className="text-gray-600 text-sm">Glow up, feel great—no confusion, no stress</p>
+              <p className="font-semibold text-start">No Hidden Fees</p>
+              <p className="text-gray-600 text-sm text-start">No surprises. What you see is what you get—transparent pricing, no extra charges.</p>
             </div>
           </li>
 
@@ -63,7 +64,7 @@ export default function Guarantee() {
             />
             <div>
               <p className="font-semibold text-start">Ships Only to Port Harcourt (For Now)</p>
-              <p className="text-gray-600 text-sm text-start">Interstate shipping coming soon!</p>
+              <p className="text-gray-600 text-sm text-start">At the moment, Maybox ships exclusively to Port Harcourt. We’re working tirelessly to expand to more locations soon.</p>
             </div>
           </li>
         </ul>
