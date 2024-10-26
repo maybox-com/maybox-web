@@ -8,7 +8,7 @@ const Aboutbody = () => {
         <div className="relative flex flex-col text-customOrangeDark items-center justify-center min-h-screen px-4">
           <div className="absolute bottom-10 left-4 md:bottom-28 md:left-8 z-10 bg-white p-4 md:p-16">
             <p className="font-semibold pl-[4px] tracking-tight text-[15px] font-neueEinstellung">
-              Unbox Your Glow Up!
+              Unbox Your Glow Up
             </p>
             <p className="font-normal font-playtip text-2xl md:text-5xl mb-4 md:mb-8">
               Our self-care sidekick is <br /> just a click away.

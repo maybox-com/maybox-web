@@ -13,6 +13,11 @@ import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgottenPassword';
 import LandingPage from './components/Landing/LandingPage';
 import { Analytics } from "@vercel/analytics/react"
+import Dashboard from './pages/Dashboard';
+import Dashboardpage from './components/DashBoard/Pages/Dashboardpage';
+import Personaldetails from './components/DashBoard/Pages/Personaldetails';
+import Subscriptionpage from './components/DashBoard/Pages/Subscriptionpage';
+import Deliverypage from './components/DashBoard/Pages/Deliverypage';
 
 function App() {
   return (
@@ -22,6 +27,12 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+           <Route path="/dashboardpage" element={<Dashboardpage />}/>
+          <Route path="/personaldetails" element={<Personaldetails />}/>
+          <Route path="/subscriptionpage" element={<Subscriptionpage />}/>
+          <Route path="/deliverypage" element={<Deliverypage />}/>
+
           <Route path="/vendors" element={<VendorForm />} />
           {/* <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />

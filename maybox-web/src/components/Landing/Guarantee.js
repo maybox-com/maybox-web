@@ -1,19 +1,19 @@
 import React from "react";
-import GuaranteeImage from "../../assets/images/guarantee-woman.png";
 import Haze from "../../assets/images/haze.png";
 import Clapping from "../../assets/images/clapping.png";
 import Flag from "../../assets/images/flag.png";
+import GuaranteeImage from "../../assets/images/guarantee.jpg";
 
 export default function Guarantee() {
   return (
-    <div className="flex flex-col font-neueEinstellung lg:flex-row items-center justify-between mt-20 px-4 lg:px-16">
+    <div className="pb-20 flex flex-col font-neueEinstellung lg:flex-row items-center justify-between mt-20 px-4 lg:px-16">
       <div className="flex-shrink-0">
         <img
-        className="border-2 border-black"
-          src="https://images.pexels.com/photos/6977992/pexels-photo-6977992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=11"
+          className=" border rounded-md"
+          src={GuaranteeImage}
           alt="Woman smiling with skincare"
-           width={350}
-           height={50}
+          width={550}
+          height={50}
         />
       </div>
 
