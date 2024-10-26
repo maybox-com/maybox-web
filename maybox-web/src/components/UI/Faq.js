@@ -7,201 +7,174 @@ function Faq() {
   const handleAccordionClick = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+  
   return (
     <>
-      <div class="space-y-4 px-2 md:px-[10em]">
-        <div className="font-playtip leading-tight text-center my-10 text-3xl mb: text-[54px]">
-          <h1>Questions?Answers.</h1>
+      <div className="space-y-4 px-2 md:px-[10em]">
+        <div className="font-playtip leading-tight text-center my-10 text-3xl mb:text-[54px]">
+          <h1>Questions? Answers.</h1>
         </div>
-              <details
-                class="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
-                open
+
+        <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden" open>
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+            <h2 className="font-medium font-playtip">What is Maybox?</h2>
+            <span className="relative size-5 shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 size-5 opacity-100 group-open:opacity-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
               >
-                <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 class="font-medium font-playtip">
-                    Lorem ipsum dolor sit amet consectetur adipisicing?
-                  </h2>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+          </summary>
 
-                  <span class="relative size-5 shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="absolute inset-0 size-5 opacity-100 group-open:opacity-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+          <p className="mt-4 leading-relaxed text-gray-700 font-neueEinstellung">
+            Maybox is a monthly subscription service that delivers curated beauty, grooming, and lifestyle products based on your preferences.
+          </p>
+        </details>
 
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>
-                </summary>
+        <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+            <h2 className="font-medium font-playtip">How do I customize my Maybox?</h2>
+            <span className="relative size-5 shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 opacity-100 group-open:opacity-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 opacity-0 group-open:opacity-100"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+          </summary>
 
-                <p class="mt-4 leading-relaxed text-gray-700 font-neueEinstellung">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
-                </p>
-              </details>
+          <p className="mt-4 leading-relaxed text-gray-700 font-neueEinstellung">
+            After subscribing, fill out a quick questionnaire about your preferences, and we'll create a box tailored to your needs.
+          </p>
+        </details>
 
-              <details class="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 class="font-medium font-playtip">
-                    Lorem ipsum dolor sit amet consectetur adipisicing?
-                  </h2>
+        <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+            <h2 className="font-medium font-playtip">Can I change my preferences later?</h2>
+            <span className="relative size-5 shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 opacity-100 group-open:opacity-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 opacity-0 group-open:opacity-100"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+          </summary>
 
-                  <span class="relative size-5 shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="absolute inset-0 opacity-100 group-open:opacity-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+          <p className="mt-4 leading-relaxed text-gray-700 font-neueEinstellung">
+            Yes, you can update your preferences anytime by logging into your account before the next box ships.
+          </p>
+        </details>
 
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="absolute inset-0 opacity-0 group-open:opacity-100"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>
-                </summary>
+        <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+            <h2 className="font-medium font-playtip">What products will be in my box?</h2>
+            <span className="relative size-5 shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 opacity-100 group-open:opacity-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 opacity-0 group-open:opacity-100"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+          </summary>
 
-                <p class="mt-4 leading-relaxed text-gray-700 font-neueEinstellung">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
-                </p>
-              </details>
-              <details class="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 class="font-medium font-playtip">
-                    Lorem ipsum dolor sit amet consectetur adipisicing?
-                  </h2>
+          <p className="mt-4 leading-relaxed text-gray-700 font-neueEinstellung">
+            You’ll receive a mix of skincare, grooming, wellness, and lifestyle products, including full-size and deluxe samples.
+          </p>
+        </details>
 
-                  <span class="relative size-5 shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="absolute inset-0 opacity-100 group-open:opacity-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+        <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+            <h2 className="font-medium font-playtip">How often will I get my Maybox?</h2>
+            <span className="relative size-5 shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 opacity-100 group-open:opacity-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute inset-0 opacity-0 group-open:opacity-100"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+          </summary>
 
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="absolute inset-0 opacity-0 group-open:opacity-100"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>
-                </summary>
-
-                <p class="mt-4 leading-relaxed text-gray-700 font-neueEinstellung">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
-                </p>
-              </details>
-              <details class="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-                <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-                  <h2 class="font-medium font-playtip">
-                    Lorem ipsum dolor sit amet consectetur adipisicing?
-                  </h2>
-
-                  <span class="relative size-5 shrink-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="absolute inset-0 opacity-100 group-open:opacity-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="absolute inset-0 opacity-0 group-open:opacity-100"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>
-                </summary>
-
-                <p class="mt-4 leading-relaxed text-gray-700 font-neueEinstellung">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
-                </p>
-              </details>
-            </div>
+          <p className="mt-4 leading-relaxed text-gray-700 font-neueEinstellung">
+            Your Maybox is delivered monthly, right to your doorstep.
+          </p>
+        </details>
+      </div>
     </>
   );
 }

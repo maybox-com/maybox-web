@@ -16,7 +16,7 @@ function Footer() {
                 Take your self-care routine to the next level with a box full of
                 beauty and wellness goodies, picked just for you. Get the latest
                 must-haves delivered straight to your door, designed to match
-                your vibe and keep you glowing."
+                your vibe and keep you glowing.
               </p>
 
               <ul class="mt-8 flex gap-6">
@@ -46,7 +46,7 @@ function Footer() {
 
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/shopmaybox/"
                     rel="noreferrer"
                     target="_blank"
                     class="text-gray-700 transition hover:opacity-75"
@@ -127,7 +127,7 @@ function Footer() {
                 <ul class="mt-6 space-y-4 text-sm font-neueEinstellung">
                   <li>
                     <a
-                      href="#"
+                      href="mailto:info@themaybox.com"
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
@@ -156,11 +156,11 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="/vendors"
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      Subscription Plans{" "}
+                      Apply to be a vendor{" "}
                     </a>
                   </li>
                 </ul>

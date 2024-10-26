@@ -3,6 +3,7 @@ import './index.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import VendorForm from './components/Landing/VendorForm';
 import Shop from './pages/Shop';
 import Contact from './pages/ContactUs';
 import Lost from './pages/404';
@@ -32,6 +33,7 @@ function App() {
           <Route path="/subscriptionpage" element={<Subscriptionpage />}/>
           <Route path="/deliverypage" element={<Deliverypage />}/>
 
+          <Route path="/vendors" element={<VendorForm />} />
           {/* <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/signin" element={<SignIn />} />
