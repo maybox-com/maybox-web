@@ -31,7 +31,7 @@ export default function Body() {
     >
       <div className="div-1  relative container hero-box mx-auto text-center px-4 pt-10 pb-20">
         <p className="text-sm sm:text-sm pb-2 pt-40">Get started in a few simple steps <span className="span">Quickstart Guide ↗</span></p>
-        <h1 className="text-base leading-loose hero-box sm:text-3xl text-center md:text-5xl  tracking-tight font-bold text-customOrangeDark lg:text-center">
+        <h1 className="text-base leading-loose hero-box sm:text-5xl text-center md:text-5xl  tracking-tight font-bold text-customOrangeDark lg:text-center">
         The new way to shop beauty, <br></br> wellness & selfcare products
         </h1>
 
@@ -121,63 +121,6 @@ export default function Body() {
         </div>
       </div>
 
-        <div className="grid grid-cols-1 mb-8 md:grid-cols-3 gap-8 px-4 md:px-16">
-  <div className="flex flex-col items-center">
-    <img
-      src="https://images.pexels.com/photos/3736281/pexels-photo-3736281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=11"
-      alt="Feel"
-      width={300}  
-      height={250} 
-      className="border-2 border-black mb-4"
-    />
-    <LordIcon
-      src="https://cdn.lordicon.com/jjoolpwc.json"
-      className="w-20 h-20"
-    />
-    <h3 className="text-xl font-bold mt-4 text-black">FEEL</h3>
-    <p className="text-gray-600 mt-2 text-center">
-      Let us help you <span className="font-bold">feel</span> glamorous and beautiful.
-    </p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <img
-      src="https://images.pexels.com/photos/15829509/pexels-photo-15829509/free-photo-of-portrait-of-a-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt="Look"
-      width={300} 
-      height={250}
-      className="border-2 border-black mb-4"
-    />
-    <LordIcon
-      src="https://cdn.lordicon.com/zpwnkfbk.json"
-      className="w-20 h-20"
-    />
-    <h3 className="text-xl font-bold mt-4 text-black">LOOK</h3>
-    <p className="text-gray-600 mt-2 text-center">
-      Let us help you <span className="font-bold">look</span> bold with a natural glow.
-    </p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <img
-      src="https://images.pexels.com/photos/6978068/pexels-photo-6978068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt="Care"
-      width={300}  
-      height={250}
-      className="border-2 border-black mb-4"
-    />
-    <DotLottieReact
-      src="https://lottie.host/0e8ba1a7-5d0b-4466-ab55-31354f50cd28/VkfZ1p75qC.json"
-      className="w-20 h-20"
-      loop
-      autoplay
-    />
-    <h3 className="text-xl font-bold mt-4 text-black">CARE</h3>
-    <p className="text-gray-600 mt-2 text-center">
-      Let us help you care for <span className="font-bold">yourself</span> every day.
-    </p>
-  </div>
-</div>
 
 
 
@@ -252,7 +195,6 @@ export default function Body() {
       <div id="joinus" ref={joinUsRef}>
         <WaitlistForm />
       </div>
-    </div>
     </div>
   );
 }

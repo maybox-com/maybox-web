@@ -1,28 +1,29 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Sidebar from '../components/DashBoard/Sidebar'
-import Navbar from '../components/DashBoard/Navbar'
-import Dashboardpage from '../components/DashBoard/Pages/Dashboardpage'
-import Personaldetails from '../components/DashBoard/Pages/Personaldetails'
-import '../assets/styles/Dashboard.css'
-import Subscriptionpage from '../components/DashBoard/Pages/Subscriptionpage'
-import Deliverypage from '../components/DashBoard/Pages/Deliverypage'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ProfileProvider } from '../components/DashBoard/Pages/ProfileContext';
+import Dashboardpage from '../components/DashBoard/Pages/Dashboardpage';
+import Personaldetails from '../components/DashBoard/Pages/Components/Personaldetails';
+import Subscription from '../components/DashBoard/Pages/Components/Subscription';
+import DeliveryDetails from '../components/DashBoard/Pages/Components/Deliverydetails';
+import NotFound from '../components/DashBoard/Pages/Components/NotFound';
 
 
-const Dashboard = () => {
+
+
+function DashBoard() {
   return (
-    <div>
-      <Navbar />
-      <Sidebar />
-      <main className="mt-9 ml-64 p-4">
+    <ProfileProvider>
+    <Router>
         <Routes>
-          <Route path="/dashboardpage" element={<Dashboardpage />} />
+          <Route path="/" element={<Dashboardpage />} />
           <Route path="/personaldetails" element={<Personaldetails />} />
-          <Route path="/subsciptionpage" element={<Subscriptionpage />} />
-          <Route path="/deliverypage" element={<Deliverypage />} />        </Routes>
-      </main>
-    </div>
-  )
+          <Route path="/subscription" element={<Subscription />} />
+          <Route path="/deliverydetails" element={<DeliveryDetails />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+    </Router>
+    </ProfileProvider>
+  );
 }
 
-export default Dashboard
+export default DashBoard;
