@@ -8,7 +8,7 @@ import { IoLocation } from "react-icons/io5";
 import { GoDotFill } from "react-icons/go";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
-import "/Uc's files/Files/maybox-web-main/maybox-web/maybox-web/src/assets/styles/Dashboard.css";
+import "../../../assets/styles/Dashboard.css";
 
 const Dashboardpage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

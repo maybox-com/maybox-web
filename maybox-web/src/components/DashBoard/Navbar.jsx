@@ -1,7 +1,7 @@
 import { IoIosNotifications } from "react-icons/io";
 import { FaLocationArrow } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
-import "/Uc's files/Files/maybox-web-main/maybox-web/maybox-web/src/assets/styles/Dashboard-Nav.css";
+import "../../../src/assets/styles/Dashboard-Nav.css";
 
 const Navbar = ({ toggleSidebar }) => {
   return (

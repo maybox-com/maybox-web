@@ -253,6 +253,5 @@ export default function Body() {
         <WaitlistForm />
       </div>
     </div>
-    </div>
   );
 }
