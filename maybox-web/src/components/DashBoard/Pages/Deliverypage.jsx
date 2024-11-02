@@ -74,7 +74,6 @@ const Deliverypage = () => {
                   <h4 className="font-semibold">Status:</h4>
                   <p>In Transit</p>
                 </div>
-                {/* Additional delivery details can be added here */}
               </div>
             </div>
           </div>

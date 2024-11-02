@@ -4,7 +4,7 @@ import { RxDashboard } from "react-icons/rx";
 import { FaRegUser } from "react-icons/fa6";
 import { MdPayment } from "react-icons/md";
 import { CiDeliveryTruck, CiLogout } from "react-icons/ci";
-import "/Uc's files/Files/maybox-web-main/maybox-web/maybox-web/src/assets/styles/Sidebar.css";
+import "../../assets/styles/Sidebar.css";
 
 const Sidebar = ({ isOpen }) => {
   return (

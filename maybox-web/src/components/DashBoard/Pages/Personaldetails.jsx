@@ -7,7 +7,7 @@ import { MdAttachEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
 
-import "/Uc's files/Files/maybox-web-main/maybox-web/maybox-web/src/assets/styles/Personaldetails.css";
+import "../../../assets/styles/Personaldetails.css";
 
 const Personaldetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

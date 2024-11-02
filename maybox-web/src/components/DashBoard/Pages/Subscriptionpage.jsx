@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../Navbar';
 import Sidebar from '../Sidebar';
 import { GoDotFill } from "react-icons/go";
-import "/Uc's files/Files/maybox-web-main/maybox-web/maybox-web/src/assets/styles/Subscriptionpage.css";
+import "../../../assets/styles/Subscriptionpage.css";
 
 const Subscriptionpage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
