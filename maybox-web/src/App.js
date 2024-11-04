@@ -15,9 +15,9 @@ import LandingPage from './components/Landing/LandingPage';
 import { Analytics } from "@vercel/analytics/react"
 import Dashboard from './pages/Dashboard';
 import Dashboardpage from './components/DashBoard/Pages/Dashboardpage';
-import Personaldetails from './components/DashBoard/Pages/Personaldetails';
-import Subscriptionpage from './components/DashBoard/Pages/Subscriptionpage';
-import Deliverypage from './components/DashBoard/Pages/Deliverypage';
+import Personaldetails from './components/DashBoard/Pages/Components/Personaldetails';
+import Subscription from './components/DashBoard/Pages/Components/Subscription';
+import DeliveryDetails from './components/DashBoard/Pages/Components/Deliverydetails';
 
 function App() {
   return (
@@ -30,8 +30,9 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
            <Route path="/dashboardpage" element={<Dashboardpage />}/>
           <Route path="/personaldetails" element={<Personaldetails />}/>
-          <Route path="/subscriptionpage" element={<Subscriptionpage />}/>
-          <Route path="/deliverypage" element={<Deliverypage />}/>
+          <Route path="/subscription" element={<Subscription />}/>
+          <Route path="/deliverydetails" element={<DeliveryDetails />}/>
+  
 
           <Route path="/vendors" element={<VendorForm />} />
           {/* <Route path="/contact" element={<Contact />} />

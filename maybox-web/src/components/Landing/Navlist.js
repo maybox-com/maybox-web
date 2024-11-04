@@ -4,6 +4,7 @@ const NavList = () => {
     { href: "/", label: "Join Us" },
     { href: "/about", label: "About" },
     { href: "#guarantee", label: "Guarantee" },
+    { href: "dashboardpage", label: "Dashboard" },
   ];
 
   return (
