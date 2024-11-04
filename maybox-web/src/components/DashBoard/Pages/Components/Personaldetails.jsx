@@ -43,7 +43,7 @@ function PersonalDetails() {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="flex font-neueEinstellung h-screen">
       {!isModalOpen && <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />}
       <div className={`flex-1 flex flex-col overflow-hidden ${isModalOpen ? 'w-full' : ''}`}>
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />

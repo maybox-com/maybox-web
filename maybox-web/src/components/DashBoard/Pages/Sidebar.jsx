@@ -17,9 +17,9 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
     <aside
       className={`${
         sidebarOpen ? "translate-x-0" : "-translate-x-full"
-      } fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-md transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0`}
+      } fixed inset-y-0 left-0 z-50 w-64 font-neueEinstellung bg-white shadow-md transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0`}
     >
-      <div className="flex items-center justify-between p-4">
+      <div className="flex font-neueEinstellung items-center justify-between p-4">
         <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
         <button
           className="p-1 rounded-md lg:hidden hover:bg-gray-100"

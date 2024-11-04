@@ -5,7 +5,7 @@ import "../../../src/assets/styles/Dashboard-Nav.css";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
-    <div className="navbar bg-gray-900 flex justify-between items-center p-4">
+    <div className="navbar font-neueEinstellung bg-gray-900 flex justify-between items-center p-4">
       <button
         onClick={toggleSidebar}
         type="button"

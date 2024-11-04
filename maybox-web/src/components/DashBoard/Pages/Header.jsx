@@ -69,7 +69,7 @@ function Header({ setSidebarOpen }) {
   };
 
   return (
-    <header className="flex items-center justify-between px-4 py-4 bg-white shadow lg:px-6">
+    <header className="flex font-neueEinstellung items-center justify-between px-4 py-4 bg-white shadow lg:px-6">
       <div className="flex items-center">
         <button
           className="p-1 mr-2 rounded-md lg:hidden hover:bg-gray-100"
