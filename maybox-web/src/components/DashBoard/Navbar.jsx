@@ -6,7 +6,6 @@ import "../../../src/assets/styles/Dashboard-Nav.css";
 const Navbar = ({ toggleSidebar }) => {
   return (
     <div className="navbar bg-gray-900 flex justify-between items-center p-4">
-      {/* Toggle Button for Mobile View */}
       <button
         onClick={toggleSidebar}
         type="button"
