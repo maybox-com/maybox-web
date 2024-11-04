@@ -22,7 +22,7 @@ function Dashboardpage() {
 
   return (
     <ProfileProvider>
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen font-neueEinstellung bg-gray-100">
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header setSidebarOpen={setSidebarOpen} />
