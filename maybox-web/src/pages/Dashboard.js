@@ -19,7 +19,8 @@ const Dashboard = () => {
           <Route path="/dashboardpage" element={<Dashboardpage />} />
           <Route path="/personaldetails" element={<Personaldetails />} />
           <Route path="/subsciptionpage" element={<Subscriptionpage />} />
-          <Route path="/deliverypage" element={<Deliverypage />} />        </Routes>
+          <Route path="/deliverypage" element={<Deliverypage />} />   
+          </Routes>
       </main>
     </div>
   )
