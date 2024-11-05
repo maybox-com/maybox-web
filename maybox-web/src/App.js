@@ -29,11 +29,12 @@ function App() {
           <Route path="/personaldetails" element={<Personaldetails />}/>
           <Route path="/subscription" element={<Subscription />}/>
           <Route path="/deliverydetails" element={<DeliveryDetails />}/>
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
   
           {/* <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
+         
           <Route path="/resetpassword" element={<ForgotPassword />} /> */}
           <Route path="*" element={<Lost />} />
           {/* <Route path="/landing" element={<LandingPage />} /> */}

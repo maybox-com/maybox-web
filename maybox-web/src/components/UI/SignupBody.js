@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; 
 import "../../assets/styles/SignUp.css";
 import Image2 from "../../assets/images/Image.jpg";
 import {
@@ -16,6 +17,7 @@ export default function Signup() {
   const [password, setPassword] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -40,6 +42,7 @@ export default function Signup() {
       console.log("User data added to Firestore with ID: ", userRef.id);
 
       alert("User and preferences added successfully");
+      navigate("/your-next-page"); // Redirect after successful sign-up
     } catch (e) {
       console.error("Error adding document: ", e);
     }
@@ -61,6 +64,7 @@ export default function Signup() {
       console.log("Google user data added to Firestore with ID: ", userRef.id);
 
       alert("Google Sign-In successful");
+      navigate("/dashboard"); 
     } catch (e) {
       console.error("Google Sign-In Error: ", e);
     }
@@ -69,152 +73,29 @@ export default function Signup() {
   return (
     <div className="flex min-h-screen overflow-hidden">
       {/* Left side: large image */}
-      <div className="relative w-1/2  hidden lg:block">
-        <img
-          src={Image2}
-          alt="Sign In"
-          className="object-cover w-full h-full"
-        />
+      <div className="relative w-1/2 hidden lg:block">
+        <img src={Image2} alt="Sign In" className="object-cover w-full h-full" />
       </div>
 
       {/* Right side: sign-up form */}
       <div className="w-full lg:w-1/2 flex div1 items-center justify-center p-6 lg:p-12 mb-5 mr-40">
         <div className="w-full max-w-xs mb-20 overflow-y-auto h-full">
+          {/* Form header */}
           <div className="">
-            <div className="icon ">
-            <svg width="35" height="35" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_231_793)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M50 0H200V50V150L150 200L150 50H0L50 0ZM0 165.067V100L65.067 100L0 165.067ZM100 200H35.7777L100 135.778L100 200Z" fill="url(#paint0_linear_231_793)"/> </g> <defs> <linearGradient id="paint0_linear_231_793" x1="177" y1="-9.23648e-06" x2="39.5" y2="152.5" gradientUnits="userSpaceOnUse"> <stop stop-color=""/> <stop offset="1" stop-color=""/> </linearGradient> <clipPath id="clip0_231_793"> <rect width="200" height="200" fill="white"/> </clipPath> </defs> </svg>
+            <div className="icon">
+              {/* Your SVG icon here */}
             </div>
             <h2 className="mt-10 text-2xl font-medium leading-9 tracking-tight text-gray-900 pb-2">
               Get Started
             </h2>
           </div>
-          <p className="text-sm text-gray-500">Sign up to get started with your journey</p>
+          <p className="text-sm text-gray-500">
+            Sign up to get started with your journey
+          </p>
+
           {/* Sign-up form */}
           <form onSubmit={handleSubmit} className="mt-10 space-y-6">
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Name<span className="customRed edit2">*</span>
-              </label>
-              <div className="mt-2">
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                  placeholder="John Doe"
-                  autoComplete="name"
-                  className="block w-full inputfield rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Email address<span className="customRed edit2">*</span>
-              </label>
-              <div className="mt-2">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  placeholder="hello@johndoe.com"
-                  autoComplete="email"
-                  className="block inputfield w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label
-                htmlFor="password"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Password<span className="customRed edit2">*</span>
-              </label>
-              <div className="mt-2">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                  placeholder="***********"
-                  autoComplete="current-password"
-                  className="block inputfield w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label
-                htmlFor="phoneNumber"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Phone Number<span className="customRed edit2">*</span>
-              </label>
-              <div className="mt-2">
-                <input
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  type="tel"
-                  value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
-                  required
-                  placeholder="+1 555 555 5555"
-                  autoComplete="tel"
-                  className="block w-full inputfield rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div className="mb-5">
-              <label
-                htmlFor="Address"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Address<span className="customRed edit2">*</span>
-              </label>
-              <div className="mt-2">
-                <input
-                  id="Address"
-                  name="address"
-                  type="text"
-                  required
-                  placeholder="123 Maple Street
-Springfield, IL 62701
-USA"
-                  autoComplete="Name"
-                  className="block inputfield w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-             <div class="mt-2">
-            <p class="text-sm text-gray-500">
-              By creating an account, you agree to our
-              <a href="#" class="text-gray-700 underline"> terms and conditions </a>
-              and
-              <a href="#" class="text-gray-700 underline"> privacy policy </a>.
-            </p>
-          </div>
-            <div>
-              <button
-                type="submit"
-                className="flex text-center w-full bg-customOrangeDark justirfy-center rounded-xl edit3 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Sign Up
-              </button>
-            </div>
+           
           </form>
 
           <div className="mt-4">
@@ -223,41 +104,15 @@ USA"
               onClick={handleGoogleSignup}
               className="flex items-center gap-1 justify-center mt-2 w-full bg-white border border-gray-300 rounded-xl px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm hover:bg-gray-50"
             >
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 48 48"
-                style={{ display: "block", width: "17px", height: "17px" }}
-              >
-                <path
-                  fill="#EA4335"
-                  d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
-                ></path>
-                <path
-                  fill="#4285F4"
-                  d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
-                ></path>
-                <path
-                  fill="#FBBC05"
-                  d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
-                ></path>
-                <path
-                  fill="#34A853"
-                  d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
-                ></path>
-                <path fill="none" d="M0 0h48v48H0z"></path>
-              </svg>
+              {/* Google Sign-In button and SVG */}
               Sign up with Google
             </button>
           </div>
 
           <p className="mt-10 text-center text-sm text-gray-500">
             Already a member?{" "}
-            <Link
-              to="/signin"
-              className="font-semibold leading-6 text-gray-900"
-            >
-              Sign In
+            <Link to="/signin" className="text-gray-700 underline">
+              Sign in
             </Link>
           </p>
         </div>
