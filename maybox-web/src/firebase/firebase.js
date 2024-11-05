@@ -9,7 +9,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyB3WN_Pd6dLwd8chio7O4U0Jx-9lxkTiOo",
   authDomain: "mayboxdb-users.firebaseapp.com",
   projectId: "mayboxdb-users",
-  storageBucket: "mayboxdb-users.appspot.com",
+  storageBucket: "mayboxdb-users.firebasestorage.app",
   messagingSenderId: "1072722536318",
   appId: "1:1072722536318:web:1d24132e1a11983d90f52f"
 };
