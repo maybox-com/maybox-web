@@ -24,6 +24,8 @@ function App() {
         <Analytics />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/about" element={<About />} />
           <Route path="/dashboard" element={<Dashboard />} />
            <Route path="/dashboardpage" element={<Dashboardpage />}/>
@@ -33,8 +35,6 @@ function App() {
 
           {/* <Route path="/contact" element={<Contact />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
           <Route path="/resetpassword" element={<ForgotPassword />} /> */}
           <Route path="*" element={<Lost />} />
         </Routes>
